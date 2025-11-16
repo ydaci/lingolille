@@ -6,12 +6,28 @@ import LingoLilleLogo from './img/LingoLille.jpg';
 import qrcode from './img/qrcode.png';
 import instagram from './img/instagram.png';
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
+import emailjs from "emailjs-com";
 import { useState } from "react";
 
 
 export default function App() {
 
   const [aboutOpen, setAboutOpen] = useState<boolean>(false);
+  const [joinOpen, setJoinOpen] = useState(false);
+
+const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      e.currentTarget,
+      import.meta.env.VITE_EMAILJS_USER_ID
+    )
+    .then(() => alert("Message envoyé avec succès !"))
+    .catch(() => alert("Erreur lors de l'envoi, veuillez réessayer."));
+};
 
     const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -47,7 +63,7 @@ export default function App() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <span className="text-gray-900 font-bold">Lingo Lille</span>
+          <img  width="70" height="70"   src={LingoLilleLogo} alt="LingoLille" className="rounded-full object-cover" />
           </div>
 
           {/* Menu desktop */}
@@ -137,12 +153,38 @@ export default function App() {
 >
   Nos services
 </Button>
-            <Button
-              className="rounded-full bg-[#FF7A00] hover:bg-[#E66D00] text-white"
-              onClick={() => scrollToSection("join")}
-            >
-              Nous rejoindre
-            </Button>
+           {/* Menu déroulant Nous rejoindre */}
+  <div className="relative">
+    <Button
+      className="rounded-full bg-[#FF7A00] hover:bg-[#E66D00] text-white"
+      onClick={() => setJoinOpen(!joinOpen)}
+    >
+      Nous rejoindre
+    </Button>
+
+    {joinOpen && (
+      <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-lg z-50 flex flex-col">
+        <button 
+          className="px-4 py-2 text-gray-700 hover:bg-orange-50 text-left rounded-t-xl"
+          onClick={() => scrollToSection("contact")}
+        >
+          Contact Us
+        </button>
+        <button 
+          className="px-4 py-2 text-gray-400 cursor-not-allowed text-left"
+          disabled
+        >
+          S'inscrire
+        </button>
+        <button 
+          className="px-4 py-2 text-gray-400 cursor-not-allowed text-left rounded-b-xl"
+          disabled
+        >
+          Faire un don
+        </button>
+      </div>
+    )}
+  </div>
           </nav>
         </div>
       </div>
@@ -780,6 +822,42 @@ Cette méthodologie crée un environnement rassurant, motivant et propice au dé
         Tous les services grâce à la plateforme doivent fonctionner avec une commission sur le budget global.
       </p>
     </div>
+  </div>
+</section>
+
+<section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
+  <div className="container mx-auto max-w-4xl bg-white border border-gray-200 rounded-3xl p-10 shadow-lg">
+    <h2 className="text-gray-900 text-2xl font-semibold mb-6">Contact Us</h2>
+<form className="space-y-4" onSubmit={sendEmail}>
+  <input
+    type="text"
+    name="name"
+    placeholder="Nom"
+    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#FF7A00]"
+    required
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="Email"
+    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#FF7A00]"
+    required
+  />
+  <textarea
+    name="message"
+    placeholder="Message"
+    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#FF7A00]"
+    rows={5}
+    required
+  />
+  <button
+    type="submit"
+    className="bg-[#FF7A00] text-white px-6 py-3 rounded-full hover:bg-[#E66D00] transition-colors duration-300"
+  >
+    Envoyer
+  </button>
+</form>
+
   </div>
 </section>
 
