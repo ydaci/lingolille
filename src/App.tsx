@@ -185,40 +185,36 @@ export default function App() {
   <div className="container mx-auto max-w-4xl">
     <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
       <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-        <InfoCircle className="w-6 h-6 text-[#FF7A00]" /> About Us
+        <InfoCircle className="w-6 h-6 text-[#FF7A00]" /> {t("about_us")}
       </h2>
       <p className="text-gray-600 leading-relaxed whitespace-pre-line">
-        Introduction :
-        La métropole lilloise connaît une dynamique internationale croissante, marquée par la présence d’étudiants, de professionnels expatriés, de frontaliers et de voyageurs venus du monde entier. Ville dynamique et ouverte sur le monde, Lille a été Capitale Européenne de la Culture en 2004 et entretient plusieurs jumelages internationaux - ex. Turin (Italie), Cologne (Allemagne), Rotterdam (Pays-Bas), renforçant ainsi son identité multiculturelle et son ancrage européen.
-        Cette diversité crée un besoin concret : disposer de lieux et d’activités permettant de pratiquer les langues, de créer du lien social et de faciliter l’intégration linguistique et culturelle.
-        Dans ce contexte, les initiatives favorisant les échanges interculturels deviennent essentielles. Elles contribuent à la fois à l’attractivité du territoire, à l’ouverture internationale des habitants et au développement des compétences linguistiques nécessaires dans un marché du travail international.
-        Lingo Lille s’inscrit dans cette dynamique en proposant une approche innovante et conviviale de la pratique linguistique.
+{t("about_us_description")}
       </p>
 
-      <h3 className="text-gray-900 font-semibold text-lg mt-6">Les besoins identifiés :</h3>
+      <h3 className="text-gray-900 font-semibold text-lg mt-6">{t("about_us_description_1")}</h3>
 <ul className="space-y-3 mt-2">
   <li className="flex items-start gap-3">
     <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
     <span className="text-gray-600 leading-relaxed">
-      Un manque de lieux accessibles et informels pour pratiquer les langues
+      {t("about_us_description_2")}
     </span>
   </li>
   <li className="flex items-start gap-3">
     <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
     <span className="text-gray-600 leading-relaxed">
-      Une difficulté à rencontrer des personnes de cultures différentes
+      {t("about_us_description_3")}
     </span>
   </li>
   <li className="flex items-start gap-3">
     <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
     <span className="text-gray-600 leading-relaxed">
-      Une offre souvent académique, coûteuse ou peu engageante
+      {t("about_us_description_4")}
     </span>
   </li>
   <li className="flex items-start gap-3">
     <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
     <span className="text-gray-600 leading-relaxed">
-      Un besoin d’intégration sociale, tant pour les nouveaux arrivants que pour les locaux
+      {t("about_us_description_5")}
     </span>
   </li>
 </ul>
@@ -230,11 +226,10 @@ export default function App() {
   <div className="container mx-auto max-w-4xl">
     <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
       <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-        <InfoCircle className="w-6 h-6 text-[#FF7A00]" /> Qui sommes-nous ?
+        <InfoCircle className="w-6 h-6 text-[#FF7A00]" />{t("who_we_are")}
       </h2>
       <p className="text-gray-600 leading-relaxed">
-        Lingo Lille est un collectif fondé par des passionnés regroupant des habitants, des étudiants internationaux, des expatriés et des professionnels. Notre équipe réunit diverses compétences : animation, médiation culturelle, conception pédagogique, organisation événementielle, management d’équipe et développement de projets.
-Nous formons une communauté inclusive, ouverte et dynamique ayant pour objectif de favoriser les échanges humains au-delà des frontières linguistiques et culturelles.
+{t("who_we_are_description")}
       </p>
     </div>
   </div>
