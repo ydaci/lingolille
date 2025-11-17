@@ -6,7 +6,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 const resources = {
   fr: {
     translation: {
-      "hero_title": "Rejoins la communauté\nLingo Lille !",
+      "hero_title": "Rejoins la communauté\n",
       "hero_text": "Des rencontres pour pratiquer les langues à Lille, chaque semaine.\n\nCredo : “Les liens se créent, les langues connectent.”",
       "see_events": "Voir les prochains événements",
       "join_community_button": "Rejoindre la communauté",
@@ -31,7 +31,7 @@ const resources = {
   },
   en: {
     translation: {
-      "hero_title": "Join the community\nLingo Lille!",
+      "hero_title": "Join the community\n",
       "hero_text": "Meetups to practice languages in Lille every week.\n\nCredo: “Connections are created, languages connect.”",
       "see_events": "See upcoming events",
       "join_community_button": "Join the community",
@@ -56,7 +56,7 @@ const resources = {
   },
   es: {
     translation: {
-      "hero_title": "¡Únete a la comunidad\nLingo Lille!",
+      "hero_title": "¡Únete a la comunidad\n",
       "hero_text": "Encuentros para practicar idiomas en Lille cada semana.\n\nCredo: “Se crean vínculos, los idiomas conectan.”",
       "see_events": "Ver próximos eventos",
       "join_community_button": "Unirse a la comunidad",
@@ -81,7 +81,7 @@ const resources = {
   },
   zh: {
     translation: {
-      "hero_title": "加入社区\nLingo Lille！",
+      "hero_title": "加入社区\n",
       "hero_text": "每周在里尔参加语言练习活动。\n\n信条：建立联系，语言让人连接。",
       "see_events": "查看即将举行的活动",
       "join_community_button": "加入社区",
@@ -106,7 +106,7 @@ const resources = {
   },
   ja: {
     translation: {
-      "hero_title": "コミュニティに参加\nLingo Lille！",
+      "hero_title": "コミュニティに参加\n",
       "hero_text": "毎週リールで言語を練習するための集まり。\n\n信条：「つながりが生まれ、言語が人をつなぐ。」",
       "see_events": "今後のイベントを見る",
       "join_community_button": "コミュニティに参加",

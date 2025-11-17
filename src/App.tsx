@@ -156,7 +156,7 @@ export default function App() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-gray-900">
-                  {t("join_community")}<br />
+                  {t("hero_title")}<br />
                   <span className="text-[#FF7A00]">Lingo Lille</span> !
                 </h1>
                 <p className="text-gray-600 max-w-lg">{t("hero_text")}</p>
@@ -837,7 +837,7 @@ Cette méthodologie crée un environnement rassurant, motivant et propice au dé
               </a>
             </div>
 
-            <p className="text-gray-400 text-sm">© Lingo Lille – 2025</p>
+            <p className="text-gray-400 text-sm">© Lingo Lille - designed by Yanis DACI  – 2025</p>
           </div>
         </div>
       </footer>
