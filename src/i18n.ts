@@ -44,8 +44,9 @@ const resources = {
       event: {
         cafe_polyglotte: "Café Polyglotte",
         every_thursday: "Chaque jeudi",
-        title:"Nos événements",
-        description:"Rejoins-nous lors de nos rencontres hebdomadaires pour pratiquer les langues dans une ambiance conviviale.",
+        title: "Nos événements",
+        description:
+          "Rejoins-nous lors de nos rencontres hebdomadaires pour pratiquer les langues dans une ambiance conviviale.",
       },
       every_wednesday: "Chaque mercredi",
       boarding_games: "Boarding pass",
@@ -182,23 +183,58 @@ const resources = {
           text: "Faire de Lille une ville plurilingue modèle en Europe, où la langue devient un vecteur de rencontre, d’apprentissage et de croissance professionnelle.",
         },
       },
-          multinational: {
-      title: "Multinational",
-      description: "Rencontrez des personnes de différentes cultures et élargissez vos horizons."
-    },
-    conversations: {
-      title: "Conversations",
-      description: "Participez à des discussions enrichissantes et améliorez votre aisance à l’oral."
-    },
-    apprentissage: {
-      title: "Apprentissage",
-      description: "Apprenez de nouvelles langues tout en vous amusant et en échangeant."
-    },
-        joinCommunity: {
-      title: "Rejoins la communauté",
-      description: "Reste informé de tous nos événements et connecte-toi avec les membres de la communauté.",
-      linkText: "Rejoindre via ce lien"
-    }
+      multinational: {
+        title: "Multinational",
+        description:
+          "Rencontrez des personnes de différentes cultures et élargissez vos horizons.",
+      },
+      conversations: {
+        title: "Conversations",
+        description:
+          "Participez à des discussions enrichissantes et améliorez votre aisance à l’oral.",
+      },
+      apprentissage: {
+        title: "Apprentissage",
+        description:
+          "Apprenez de nouvelles langues tout en vous amusant et en échangeant.",
+      },
+      joinCommunity: {
+        title: "Rejoins la communauté",
+        description:
+          "Reste informé de tous nos événements et connecte-toi avec les membres de la communauté.",
+        linkText: "Rejoindre via ce lien",
+      },
+      service: {
+        title: "Nos services",
+        items: {
+          eventWeekly:
+            "Organisation d’événements hebdomadaires d’échanges linguistiques (Café Polyglotte).",
+          boardingPass:
+            "Organisation de soirées Boarding Pass avec tandems linguistiques et jeux de société.",
+          informalHelp:
+            "Aide linguistique informelle pour expatriés, étudiants et nouveaux arrivants.",
+          workshops:
+            "Mise en place d’ateliers thématiques (culture, conversation guidée, vocabulaire professionnel).",
+          cohesion:
+            "Organisation d’activités de cohésion pour les membres de la communauté.",
+          training:
+            "Développement potentiel de formations linguistiques accessibles à tout public.",
+          privateEvents:
+            "Animation d’événements privés ou publics liés au multilinguisme.",
+          mediation: "Conseil en médiation interculturelle.",
+          platform:
+            "Développement d’une plateforme interne pour centraliser les services et la communication.",
+        },
+        footer:
+          "Tous les services grâce à la plateforme doivent fonctionner avec une commission sur le budget global.",
+      },
+      contact: {
+        title: "Contactez-nous",
+        name_placeholder: "Nom",
+        email_placeholder: "Email",
+        message_placeholder: "Message",
+        send_button: "Envoyer",
+      },
     },
   },
   en: {
@@ -242,8 +278,9 @@ const resources = {
       event: {
         cafe_polyglotte: "Polyglot Café",
         every_thursday: "Every Thursday",
-    title: "Our Events",
-      description: "Join us at our weekly meetups to practice languages in a friendly atmosphere.",
+        title: "Our Events",
+        description:
+          "Join us at our weekly meetups to practice languages in a friendly atmosphere.",
       },
       every_wednesday: "Every Wednesday",
       boarding_games: "Boarding pass",
@@ -402,23 +439,55 @@ const resources = {
           text: "Make Lille a model multilingual city in Europe, where language becomes a tool for meeting people, learning, and professional growth.",
         },
       },
-          multinational: {
-      title: "Multinational",
-      description: "Meet people from different cultures and broaden your horizons."
-    },
-    conversations: {
-      title: "Conversations",
-      description: "Join enriching discussions and improve your speaking skills."
-    },
-    apprentissage: {
-      title: "Learning",
-      description: "Learn new languages while having fun and interacting."
-    },
-        joinCommunity: {
-      title: "Join the community",
-      description: "Stay informed about all our events and connect with community members.",
-      linkText: "Join via this link"
-    }
+      multinational: {
+        title: "Multinational",
+        description:
+          "Meet people from different cultures and broaden your horizons.",
+      },
+      conversations: {
+        title: "Conversations",
+        description:
+          "Join enriching discussions and improve your speaking skills.",
+      },
+      apprentissage: {
+        title: "Learning",
+        description: "Learn new languages while having fun and interacting.",
+      },
+      joinCommunity: {
+        title: "Join the community",
+        description:
+          "Stay informed about all our events and connect with community members.",
+        linkText: "Join via this link",
+      },
+      service: {
+        title: "Our services",
+        items: {
+          eventWeekly: "Weekly language exchange events (Polyglot Café).",
+          boardingPass:
+            "Boarding Pass evenings with language tandems and board games.",
+          informalHelp:
+            "Informal language support for expats, students, and newcomers.",
+          workshops:
+            "Thematic workshops (culture, guided conversation, professional vocabulary).",
+          cohesion: "Community-building activities for members.",
+          training:
+            "Potential development of accessible language training programs.",
+          privateEvents:
+            "Hosting private or public events related to multilingualism.",
+          mediation: "Intercultural mediation consulting.",
+          platform:
+            "Development of an internal platform to centralize services and communication.",
+        },
+        footer:
+          "All services through the platform operate with a commission on the overall budget.",
+      },
+      contact: {
+        title: "Contact Us",
+        name_placeholder: "Name",
+        email_placeholder: "Email",
+        message_placeholder: "Message",
+        send_button: "Send",
+      },
     },
   },
   es: {
@@ -463,7 +532,8 @@ const resources = {
         cafe_polyglotte: "Café Políglota",
         every_thursday: "Cada jueves",
         title: "Nuestros eventos",
-      description: "Únete a nuestros encuentros semanales para practicar idiomas en un ambiente amigable.",
+        description:
+          "Únete a nuestros encuentros semanales para practicar idiomas en un ambiente amigable.",
       },
       every_wednesday: "Cada miércoles",
       boarding_games: "Boarding pass",
@@ -598,23 +668,300 @@ const resources = {
           text: "Hacer de Lille una ciudad plurilingüe modelo en Europa, donde el idioma sea un medio para conocer gente, aprender y crecer profesionalmente.",
         },
       },
-          multinational: {
-      title: "Multinacional",
-      description: "Conoce personas de diferentes culturas y amplía tus horizontes."
+      multinational: {
+        title: "Multinacional",
+        description:
+          "Conoce personas de diferentes culturas y amplía tus horizontes.",
+      },
+      conversations: {
+        title: "Conversaciones",
+        description:
+          "Participa en discusiones enriquecedoras y mejora tu fluidez oral.",
+      },
+      apprentissage: {
+        title: "Aprendizaje",
+        description:
+          "Aprende nuevos idiomas mientras te diviertes e interactúas.",
+      },
+      joinCommunity: {
+        title: "Únete a la comunidad",
+        description:
+          "Mantente informado de todos nuestros eventos y conecta con los miembros de la comunidad.",
+        linkText: "Unirse a través de este enlace",
+      },
+      service: {
+        title: "Nuestros servicios",
+        items: {
+          eventWeekly:
+            "Organización de eventos semanales de intercambio lingüístico (Café Políglota).",
+          boardingPass:
+            "Organización de noches Boarding Pass con tándems lingüísticos y juegos de mesa.",
+          informalHelp:
+            "Ayuda lingüística informal para expatriados, estudiantes y recién llegados.",
+          workshops:
+            "Implementación de talleres temáticos (cultura, conversación guiada, vocabulario profesional).",
+          cohesion:
+            "Organización de actividades de cohesión para la comunidad.",
+          training:
+            "Desarrollo potencial de formaciones lingüísticas accesibles al público general.",
+          privateEvents:
+            "Animación de eventos privados o públicos relacionados con el multilingüismo.",
+          mediation: "Asesoramiento en mediación intercultural.",
+          platform:
+            "Desarrollo de una plataforma interna para centralizar los servicios y la comunicación.",
+        },
+        footer:
+          "Todos los servicios ofrecidos mediante la plataforma funcionarán con una comisión sobre el presupuesto global.",
+      },
+      contact: {
+        title: "Contáctanos",
+        name_placeholder: "Nombre",
+        email_placeholder: "Correo electrónico",
+        message_placeholder: "Mensaje",
+        send_button: "Enviar",
+      },
     },
-    conversations: {
-      title: "Conversaciones",
-      description: "Participa en discusiones enriquecedoras y mejora tu fluidez oral."
-    },
-    apprentissage: {
-      title: "Aprendizaje",
-      description: "Aprende nuevos idiomas mientras te diviertes e interactúas."
-    },
-        joinCommunity: {
-      title: "Únete a la comunidad",
-      description: "Mantente informado de todos nuestros eventos y conecta con los miembros de la comunidad.",
-      linkText: "Unirse a través de este enlace"
-    },
+  },
+  it: {
+    translation: {
+      hero_title: "Unisciti alla comunità\n",
+      hero_text:
+        "Incontri per praticare le lingue a Lille, ogni settimana.\n\nCredo: “I legami si creano, le lingue connettono.”",
+      see_events: "Vedi i prossimi eventi",
+      join_community_button: "Unisciti alla comunità",
+      about_us: "Chi siamo",
+      who_we_are: "Chi siamo",
+      who_we_are_description:
+        "Lingo Lille è un collettivo fondato da appassionati che riunisce abitanti, studenti internazionali, espatriati e professionisti. Il nostro team combina competenze diverse: animazione, mediazione culturale, progettazione pedagogica, organizzazione di eventi, gestione dei team e sviluppo di progetti. Siamo una comunità inclusiva, aperta e dinamica con l’obiettivo di favorire gli scambi umani oltre le frontiere linguistiche e culturali.",
+      our_methodology: "La nostra metodologia",
+      our_value_impact: "Il nostro impatto",
+      our_mission: "La nostra missione",
+      our_vision: "La nostra visione",
+      about: "Chi siamo",
+      about_us_description:
+        "Introduzione: La metropoli di Lille vive una crescente dinamica internazionale, caratterizzata dalla presenza di studenti, professionisti espatriati, frontalieri e viaggiatori provenienti da tutto il mondo. Città dinamica e aperta sul mondo, Lille è stata Capitale Europea della Cultura nel 2004 e mantiene numerosi gemellaggi internazionali — ad esempio Torino (Italia), Colonia (Germania), Rotterdam (Paesi Bassi) — rafforzando così la sua identità multiculturale e il suo radicamento europeo. Questa diversità crea un bisogno concreto: disporre di luoghi e attività che permettano di praticare le lingue, creare legami sociali e facilitare l’integrazione linguistica e culturale. In questo contesto, le iniziative che promuovono gli scambi interculturali diventano essenziali. Contribuiscono sia all’attrattività del territorio, sia all’apertura internazionale degli abitanti, sia allo sviluppo delle competenze linguistiche necessarie in un mercato del lavoro globale. Lingo Lille si inserisce in questa dinamica proponendo un approccio innovativo e conviviale alla pratica delle lingue.",
+      about_us_description_1: "I bisogni identificati:",
+      about_us_description_2:
+        "Una mancanza di luoghi accessibili e informali per praticare le lingue",
+      about_us_description_3:
+        "Difficoltà nell’incontrare persone di culture diverse",
+      about_us_description_4:
+        "Un’offerta spesso accademica, costosa o poco coinvolgente",
+      about_us_description_5:
+        "Un bisogno di integrazione sociale, sia per i nuovi arrivati che per i residenti",
+
+      events_section: "Eventi",
+      community_section: "Comunità",
+      services_section: "Servizi",
+      join_us: "Unisciti a noi",
+      events: "Eventi",
+      community: "Comunità",
+      services: "I nostri servizi",
+      contact_us: "Contattaci",
+      send: "Invia",
+      language: "Lingua",
+
+      event: {
+        cafe_polyglotte: "Café Polyglotte",
+        every_thursday: "Ogni giovedì",
+        title: "I nostri eventi",
+        description:
+          "Unisciti a noi ai nostri incontri settimanali per praticare le lingue in un’atmosfera conviviale.",
+      },
+      every_wednesday: "Ogni mercoledì",
+      boarding_games: "Boarding Pass",
+
+      community_title: "Una comunità aperta",
+      community_desc:
+        "Una comunità aperta dove ognuno può praticare, imparare e condividere la propria lingua.",
+
+      methodology: {
+        title: "La nostra metodologia",
+        intro:
+          "Lingo Lille adotta un approccio centrato sull’esperienza sociale, l’interculturalità e l’apprendimento naturale delle lingue.",
+
+        principles_title: "La nostra metodologia si basa su diversi principi:",
+
+        principle_1_title: "Apprendimento attraverso la pratica",
+        principle_1_desc:
+          "La lingua viene utilizzata in situazioni reali, spontanee e motivanti.",
+
+        principle_2_title: "Approccio conviviale e non scolastico",
+        principle_2_desc:
+          "Nessuna pressione, nessuna valutazione, ma attività ludiche, giochi da tavolo e tandem linguistici.",
+
+        principle_3_title: "Integrazione immediata dei nuovi partecipanti",
+        principle_3_desc:
+          "Accoglienza, spiegazione del concetto e accompagnamento personalizzato.",
+
+        principle_4_title: "Varietà delle attività",
+        principle_4_desc:
+          "Serate a tema, giochi linguistici, sfide interattive, discussioni guidate.",
+
+        principle_5_title: "Briefing regolare dei volontari e degli animatori",
+        principle_5_desc:
+          "Istruzioni, gestione dei gruppi, ascolto attivo e mediazione culturale.",
+
+        principle_6_title: "Adattamento continuo",
+        principle_6_desc:
+          "Considerazione dei feedback, revisione dei formati, gestione del rumore, degli spazi e dei bisogni linguistici.",
+
+        principle_7_title: "Organizzazione strutturata",
+        principle_7_desc:
+          "Accoglienza → matching linguistico → attività → rotazioni → tempo libero.",
+
+        conclusion:
+          "Questa metodologia crea un ambiente rassicurante, motivante e favorevole allo sviluppo reale delle competenze linguistiche.",
+      },
+
+      value_impact: {
+        section_title: "Il nostro valore aggiunto e impatto",
+
+        added_value_title: "Valore aggiunto",
+        added_value_1:
+          "Creazione di uno spazio interculturale unico nella metropoli di Lille.",
+        added_value_2: "Esperienza ludica e moderna della pratica linguistica.",
+        added_value_3:
+          "Struttura professionale, chiara e facilmente comprensibile.",
+        added_value_4:
+          "Qualità dell’accoglienza e integrazione dei nuovi arrivati.",
+        added_value_5:
+          "Formazione di una comunità attiva, fedele e internazionale.",
+
+        social_impact_title: "Impatto sociale",
+        social_impact_1:
+          "Riduzione della solitudine e rafforzamento del senso di appartenenza.",
+        social_impact_2:
+          "Facilitazione dell’integrazione degli stranieri nella regione.",
+        social_impact_3:
+          "Sviluppo di competenze linguistiche accessibili a tutti.",
+        social_impact_4:
+          "Messa in relazione di studenti, professionisti e abitanti.",
+        social_impact_5: "Miglioramento del clima interculturale locale.",
+
+        economic_impact_title: "Impatto economico",
+        economic_impact_1:
+          "Miglioramento delle competenze linguistiche dei professionisti.",
+        economic_impact_2:
+          "Maggiore attrattività per le imprese alla ricerca di profili multilingue.",
+        economic_impact_3:
+          "Dinamizzazione dei bar e partner locali che ospitano gli eventi.",
+        economic_impact_4:
+          "Potenziale creazione di laboratori, corsi, eventi privati e partenariati istituzionali.",
+
+        environmental_impact_title: "Impatto ambientale",
+        environmental_impact_1:
+          "Uso di spazi già esistenti invece di crearne di nuovi.",
+        environmental_impact_2:
+          "Promozione della mobilità dolce grazie a eventi organizzati in centro.",
+        environmental_impact_3:
+          "Orientamento verso la sostenibilità riducendo i supporti fisici e privilegiando il digitale.",
+      },
+
+      mission: {
+        section_title: "La nostra missione",
+        short_term: {
+          title: "Breve termine (0–12 mesi)",
+          item_1: "Strutturare i due eventi settimanali esistenti.",
+          item_2: "Migliorare la qualità del matching linguistico.",
+          item_3: "Sviluppare attività varie e attraenti.",
+          item_4: "Formare il team di volontari.",
+          item_5:
+            "Professionalizzare la comunicazione (social media, supporti visivi, identità chiara).",
+        },
+        medium_term: {
+          title: "Medio termine (1–3 anni)",
+          item_1:
+            "Ampliare le partnership (bar, università, istituzioni, aziende).",
+          item_2: "Proporre laboratori linguistici tematici.",
+          item_3:
+            "Lanciare giornate o serate speciali (cultura, professioni, viaggi).",
+          item_4: "Sviluppare strumenti pedagogici interni.",
+          item_5:
+            "Creare un polo “professionisti” dedicato all’evoluzione della carriera linguistica.",
+        },
+        long_term: {
+          title: "Lungo termine (3–5 anni e oltre)",
+          item_1:
+            "Diventare un attore fondamentale del multilinguismo nella regione.",
+          item_2:
+            "Sviluppare un’offerta di formazione e mediazione interculturale.",
+          item_3: "Estendere il modello ad altre città.",
+          item_4: "Organizzare un festival linguistico regionale.",
+          item_5: "Creare una rete europea di comunità linguistiche.",
+        },
+      },
+
+      vision: {
+        section_title: "La nostra visione",
+        short_term: {
+          title: "Breve termine",
+          text: "Costruire uno spazio inclusivo dove ognuno possa praticare le lingue con fiducia.",
+        },
+        medium_term: {
+          title: "Medio termine",
+          text: "Diventare il riferimento a Lille per gli scambi linguistici e gli eventi interculturali.",
+        },
+        long_term: {
+          title: "Lungo termine",
+          text: "Fare di Lille una città plurilingue modello in Europa, dove la lingua diventa un vettore di incontro, apprendimento e crescita professionale.",
+        },
+      },
+
+      multinational: {
+        title: "Multinazionale",
+        description:
+          "Incontra persone di culture diverse ed espandi i tuoi orizzonti.",
+      },
+      conversations: {
+        title: "Conversazioni",
+        description:
+          "Partecipa a discussioni arricchenti e migliora la tua fluidità orale.",
+      },
+      apprentissage: {
+        title: "Apprendimento",
+        description: "Impara nuove lingue divertendoti e condividendo.",
+      },
+
+      joinCommunity: {
+        title: "Unisciti alla comunità",
+        description:
+          "Rimani informato su tutti i nostri eventi e connettiti con i membri della comunità.",
+        linkText: "Unisciti tramite questo link",
+      },
+
+      service: {
+        title: "I nostri servizi",
+        items: {
+          eventWeekly:
+            "Organizzazione di eventi settimanali di scambi linguistici (Café Polyglotte).",
+          boardingPass:
+            "Organizzazione di serate Boarding Pass con tandem linguistici e giochi da tavolo.",
+          informalHelp:
+            "Supporto linguistico informale per espatriati, studenti e nuovi arrivati.",
+          workshops:
+            "Creazione di laboratori tematici (cultura, conversazione guidata, vocabolario professionale).",
+          cohesion:
+            "Organizzazione di attività di coesione per i membri della comunità.",
+          training:
+            "Sviluppo potenziale di corsi linguistici accessibili a tutti.",
+          privateEvents:
+            "Animazione di eventi privati o pubblici legati al multilinguismo.",
+          mediation: "Consulenza in mediazione interculturale.",
+          platform:
+            "Sviluppo di una piattaforma interna per centralizzare servizi e comunicazione.",
+        },
+        footer:
+          "Tutti i servizi tramite la piattaforma devono funzionare con una commissione sul budget globale.",
+      },
+
+      contact: {
+        title: "Contattaci",
+        name_placeholder: "Nome",
+        email_placeholder: "Email",
+        message_placeholder: "Messaggio",
+        send_button: "Invia",
+      },
     },
   },
   zh: {
@@ -654,7 +1001,7 @@ const resources = {
         cafe_polyglotte: "多语咖啡交流会",
         every_thursday: "每周四",
         title: "我们的活动",
-      description: "欢迎参加我们的每周聚会，在轻松友好的氛围中练习语言。",
+        description: "欢迎参加我们的每周聚会，在轻松友好的氛围中练习语言。",
       },
       every_wednesday: "每周三",
       boarding_games: "Boarding pass",
@@ -764,190 +1111,242 @@ const resources = {
           text: "使里尔成为欧洲的多语言示范城市，让语言成为交流、学习和职业发展的工具。",
         },
       },
-       multinational: {
-      title: "多国籍",
-      description: "结识来自不同文化的人，拓宽你的视野。"
-    },
-    conversations: {
-      title: "会话",
-      description: "参与丰富的讨论，提高你的口语能力。"
-    },
-    apprentissage: {
-      title: "学习",
-      description: "在互动中快乐学习新语言。"
-    },
-        joinCommunity: {
-      title: "加入社区",
-      description: "随时了解我们的所有活动，并与社区成员建立联系。",
-      linkText: "通过此链接加入"
-    },
-  },
-    },
-ja: {
-  translation: {
-    hero_title: "コミュニティに参加\n",
-    hero_text:
-      "毎週リールで言語を練習するための集まり。\n\n信条：「つながりが生まれ、言語が人をつなぐ。」",
-    see_events: "今後のイベントを見る",
-    join_community_button: "コミュニティに参加",
-    about_us: "私たちについて",
-    who_we_are: "私たちは誰ですか",
-    who_we_are_description:
-      "Lingo Lille は、情熱を持つメンバーによって設立されたコレクティブで、地元住民、留学生、駐在員、そして専門家が集まっています。私たちのチームは、ファシリテーション、文化的仲介、教育設計、イベント運営、チームマネジメント、プロジェクト開発など、多様なスキルを有しています。私たちは、言語や文化の境界を越えた人間交流を促進することを目的とする、包括的で開かれた、そして活気あるコミュニティです。",
-    our_methodology: "私たちの方法論",
-    our_value_impact: "私たちの価値と影響",
-    our_mission: "私たちの使命",
-    our_vision: "私たちのビジョン",
-    about: "私たちについて",
-    about_us_description:
-      "紹介：リール都市圏は、世界中からの学生、駐在員、国境労働者、旅行者の存在によって、ますます国際的な活気を見せています。活気があり国際的に開かれた都市であるリールは、2004年に欧州文化首都に選ばれ、トリノ（イタリア）、ケルン（ドイツ）、ロッテルダム（オランダ）など、複数の国際都市と姉妹都市関係を結んでいます。これにより、その多文化性とヨーロッパ的アイデンティティが強化されています。この多様性は、言語を練習し、社会的つながりを作り、言語的・文化的統合を促進するための場所や活動が必要であることを示しています。このような背景の中、異文化交流を促進する取り組みは不可欠です。それらは地域の魅力向上、住民の国際的な視野の拡大、そして国際的な労働市場で必要とされる言語能力の向上に貢献します。Lingo Lille は、言語実践に対して革新的で親しみやすいアプローチを提供することで、この流れに寄与しています。",
-    about_us_description_1: "特定されたニーズ：",
-    about_us_description_2: "言語を気軽に練習できる場所が不足していること",
-    about_us_description_3: "異なる文化の人々と出会う機会が少ないこと",
-    about_us_description_4:
-      "提供されるサービスが学術的、費用が高い、または魅力に欠けることが多い",
-    about_us_description_5:
-      "新来者と地元住民の双方にとって社会的な統合の必要性があること",
-    events_section: "イベント",
-    community_section: "コミュニティ",
-    services_section: "サービス",
-    join_us: "参加する",
-    events: "イベント",
-    community: "コミュニティ",
-    services: "私たちのサービス",
-    contact_us: "お問い合わせ",
-    send: "送信",
-    language: "言語",
-    event: {
-      cafe_polyglotte: "ポリグロットカフェ",
-      every_thursday: "毎週木曜日",
-      title: "イベント情報",
-      description: "毎週の集まりに参加して、フレンドリーな雰囲気の中で言語を練習しましょう。",
-    },
-    every_wednesday: "毎週水曜日",
-    boarding_games: "Boarding pass",
-    community_title: "開かれたコミュニティ",
-    community_desc:
-      "誰もが自分の言語を練習し、学び、共有できる開かれたコミュニティです。",
-    methodology: {
-      title: "私たちのメソッド",
-      intro:
-        "Lingo Lille は、社会的体験、異文化交流、自然な言語習得に焦点を当てたアプローチを採用しています。",
-      principles_title: "私たちのメソッドは次の原則に基づいています：",
-      principle_1_title: "実践を通じた学習",
-      principle_1_desc:
-        "言語は、自然で自発的かつ動機づけのある実際の状況で使われます。",
-      principle_2_title: "フレンドリーで学校的ではないアプローチ",
-      principle_2_desc:
-        "プレッシャーも評価もなく、楽しいアクティビティ、ボードゲーム、語学タンデムを中心に行います。",
-      principle_3_title: "新参加者の即時サポート",
-      principle_3_desc: "ウェルカム対応、コンセプト説明、個別サポート。",
-      principle_4_title: "多様なアクティビティ",
-      principle_4_desc:
-        "テーマイベント、言語ゲーム、インタラクティブチャレンジ、ガイド付きディスカッション。",
-      principle_5_title:
-        "ボランティア・ファシリテーターへの定期ブリーフィング",
-      principle_5_desc:
-        "指示、グループマネジメント、積極的傾聴、文化的仲介。",
-      principle_6_title: "継続的な改善",
-      principle_6_desc:
-        "フィードバックの反映、形式の見直し、騒音・空間・言語ニーズの調整。",
-      principle_7_title: "体系的な進行",
-      principle_7_desc:
-        "受付 → 言語マッチング → アクティビティ → ローテーション → 自由時間。",
-      conclusion:
-        "このメソッドは、安心感があり、意欲を高め、実際の言語能力向上につながる環境を作り出します。",
-    },
-    value_impact: {
-      section_title: "私たちの付加価値とインパクト",
-      added_value_title: "付加価値",
-      added_value_1: "リール都市圏における独自の異文化交流スペースを創出。",
-      added_value_2: "楽しく現代的な言語練習体験。",
-      added_value_3: "わかりやすく、プロフェッショナルで明確な進行構造。",
-      added_value_4: "新規参加者に対する高品質な受け入れとサポート。",
-      added_value_5: "活動的で忠実、そして国際的なコミュニティの形成。",
-      social_impact_title: "社会的インパクト",
-      social_impact_1: "孤独感の軽減と帰属意識の向上。",
-      social_impact_2: "地域に来た外国人のスムーズな統合を支援。",
-      social_impact_3: "誰でもアクセスできる言語能力の向上。",
-      social_impact_4: "学生・専門家・住民をつなぐ交流の場。",
-      social_impact_5: "地域の異文化理解の改善。",
-      economic_impact_title: "経済的インパクト",
-      economic_impact_1: "プロフェッショナルの語学スキル向上。",
-      economic_impact_2: "多言語人材を求める企業への魅力度向上。",
-      economic_impact_3: "イベントを受け入れるバーや地域パートナーの活性化。",
-      economic_impact_4:
-        "ワークショップ、研修、プライベートイベント、行政パートナーシップの創出可能性。",
-      environmental_impact_title: "環境的インパクト",
-      environmental_impact_1: "新しい会場を作らず、既存スペースを利用。",
-      environmental_impact_2:
-        "市内中心部での開催により、環境に優しい移動手段を促進。",
-      environmental_impact_3:
-        "紙などの物理的サポートを減らし、デジタルを優先して持続可能性を推進。",
-    },
-    mission: {
-      section_title: "私たちのミッション",
-      short_term: {
-        title: "短期（0–12ヶ月）",
-        item_1: "既存の週2回のイベントを構造化する。",
-        item_2: "言語マッチングの質を向上させる。",
-        item_3: "多様で魅力的なアクティビティを開発する。",
-        item_4: "ボランティアチームをトレーニングする。",
-        item_5:
-          "コミュニケーションの専門化（SNS、ビジュアル資料、明確なアイデンティティ）。",
+      multinational: {
+        title: "多国籍",
+        description: "结识来自不同文化的人，拓宽你的视野。",
       },
-      medium_term: {
-        title: "中期（1–3年）",
-        item_1: "パートナーシップを拡大する（バー、大学、機関、企業）。",
-        item_2: "テーマ別言語ワークショップを提供する。",
-        item_3: "特別な日やイベント（文化、職業、旅行）を開催する。",
-        item_4: "内部教育ツールを開発する。",
-        item_5:
-          "言語キャリアの発展に特化した「プロフェッショナル」部門を作る。",
+      conversations: {
+        title: "会话",
+        description: "参与丰富的讨论，提高你的口语能力。",
       },
-      long_term: {
-        title: "長期（3–5年およびそれ以上）",
-        item_1: "地域の多言語主義における主要なプレイヤーになる。",
-        item_2: "トレーニングおよび異文化仲介のプログラムを開発する。",
-        item_3: "モデルを他の都市に拡張する。",
-        item_4: "地域の言語フェスティバルを開催する。",
-        item_5: "ヨーロッパの言語コミュニティネットワークを作る。",
+      apprentissage: {
+        title: "学习",
+        description: "在互动中快乐学习新语言。",
       },
-    },
-    vision: {
-      section_title: "私たちのビジョン",
-      short_term: {
-        title: "短期",
-        text: "誰もが自信を持って言語を練習できる包括的な空間を作る。",
+      joinCommunity: {
+        title: "加入社区",
+        description: "随时了解我们的所有活动，并与社区成员建立联系。",
+        linkText: "通过此链接加入",
       },
-      medium_term: {
-        title: "中期",
-        text: "リールにおける言語交流と異文化イベントの基準となる。",
+      service: {
+        title: "我们的服务",
+        items: {
+          eventWeekly: "举办每周语言交流活动（多语咖啡）。",
+          boardingPass: "举办“Boarding Pass”语言互助与桌游主题晚会。",
+          informalHelp: "为外籍人士、学生和新来者提供非正式语言帮助。",
+          workshops: "开展主题工作坊（文化、引导式会话、专业词汇）。",
+          cohesion: "为社区成员组织凝聚力活动。",
+          training: "潜在开发面向大众的语言培训课程。",
+          privateEvents: "主持与多语言相关的私人或公共活动。",
+          mediation: "提供跨文化沟通咨询服务。",
+          platform: "开发内部平台以集中管理服务和沟通。",
+        },
+        footer: "所有通过平台提供的服务都将基于总体预算收取一定比例的佣金。",
       },
-      long_term: {
-        title: "長期",
-        text: "リールをヨーロッパの模範的な多言語都市にし、言語が人々の出会い、学習、キャリア成長の手段となるようにする。",
+      contact: {
+        title: "联系我们",
+        name_placeholder: "姓名",
+        email_placeholder: "邮箱",
+        message_placeholder: "留言",
+        send_button: "发送",
       },
     },
   },
-  multinational: {
-      title: "多国籍",
-      description: "さまざまな文化の人々と出会い、視野を広げましょう。"
+  ja: {
+    translation: {
+      hero_title: "コミュニティに参加\n",
+      hero_text:
+        "毎週リールで言語を練習するための集まり。\n\n信条：「つながりが生まれ、言語が人をつなぐ。」",
+      see_events: "今後のイベントを見る",
+      join_community_button: "コミュニティに参加",
+      about_us: "私たちについて",
+      who_we_are: "私たちは誰ですか",
+      who_we_are_description:
+        "Lingo Lille は、情熱を持つメンバーによって設立されたコレクティブで、地元住民、留学生、駐在員、そして専門家が集まっています。私たちのチームは、ファシリテーション、文化的仲介、教育設計、イベント運営、チームマネジメント、プロジェクト開発など、多様なスキルを有しています。私たちは、言語や文化の境界を越えた人間交流を促進することを目的とする、包括的で開かれた、そして活気あるコミュニティです。",
+      our_methodology: "私たちの方法論",
+      our_value_impact: "私たちの価値と影響",
+      our_mission: "私たちの使命",
+      our_vision: "私たちのビジョン",
+      about: "私たちについて",
+      about_us_description:
+        "紹介：リール都市圏は、世界中からの学生、駐在員、国境労働者、旅行者の存在によって、ますます国際的な活気を見せています。活気があり国際的に開かれた都市であるリールは、2004年に欧州文化首都に選ばれ、トリノ（イタリア）、ケルン（ドイツ）、ロッテルダム（オランダ）など、複数の国際都市と姉妹都市関係を結んでいます。これにより、その多文化性とヨーロッパ的アイデンティティが強化されています。この多様性は、言語を練習し、社会的つながりを作り、言語的・文化的統合を促進するための場所や活動が必要であることを示しています。このような背景の中、異文化交流を促進する取り組みは不可欠です。それらは地域の魅力向上、住民の国際的な視野の拡大、そして国際的な労働市場で必要とされる言語能力の向上に貢献します。Lingo Lille は、言語実践に対して革新的で親しみやすいアプローチを提供することで、この流れに寄与しています。",
+      about_us_description_1: "特定されたニーズ：",
+      about_us_description_2: "言語を気軽に練習できる場所が不足していること",
+      about_us_description_3: "異なる文化の人々と出会う機会が少ないこと",
+      about_us_description_4:
+        "提供されるサービスが学術的、費用が高い、または魅力に欠けることが多い",
+      about_us_description_5:
+        "新来者と地元住民の双方にとって社会的な統合の必要性があること",
+      events_section: "イベント",
+      community_section: "コミュニティ",
+      services_section: "サービス",
+      join_us: "参加する",
+      events: "イベント",
+      community: "コミュニティ",
+      services: "私たちのサービス",
+      contact_us: "お問い合わせ",
+      send: "送信",
+      language: "言語",
+      event: {
+        cafe_polyglotte: "ポリグロットカフェ",
+        every_thursday: "毎週木曜日",
+        title: "イベント情報",
+        description:
+          "毎週の集まりに参加して、フレンドリーな雰囲気の中で言語を練習しましょう。",
+      },
+      every_wednesday: "毎週水曜日",
+      boarding_games: "Boarding pass",
+      community_title: "開かれたコミュニティ",
+      community_desc:
+        "誰もが自分の言語を練習し、学び、共有できる開かれたコミュニティです。",
+      methodology: {
+        title: "私たちのメソッド",
+        intro:
+          "Lingo Lille は、社会的体験、異文化交流、自然な言語習得に焦点を当てたアプローチを採用しています。",
+        principles_title: "私たちのメソッドは次の原則に基づいています：",
+        principle_1_title: "実践を通じた学習",
+        principle_1_desc:
+          "言語は、自然で自発的かつ動機づけのある実際の状況で使われます。",
+        principle_2_title: "フレンドリーで学校的ではないアプローチ",
+        principle_2_desc:
+          "プレッシャーも評価もなく、楽しいアクティビティ、ボードゲーム、語学タンデムを中心に行います。",
+        principle_3_title: "新参加者の即時サポート",
+        principle_3_desc: "ウェルカム対応、コンセプト説明、個別サポート。",
+        principle_4_title: "多様なアクティビティ",
+        principle_4_desc:
+          "テーマイベント、言語ゲーム、インタラクティブチャレンジ、ガイド付きディスカッション。",
+        principle_5_title:
+          "ボランティア・ファシリテーターへの定期ブリーフィング",
+        principle_5_desc:
+          "指示、グループマネジメント、積極的傾聴、文化的仲介。",
+        principle_6_title: "継続的な改善",
+        principle_6_desc:
+          "フィードバックの反映、形式の見直し、騒音・空間・言語ニーズの調整。",
+        principle_7_title: "体系的な進行",
+        principle_7_desc:
+          "受付 → 言語マッチング → アクティビティ → ローテーション → 自由時間。",
+        conclusion:
+          "このメソッドは、安心感があり、意欲を高め、実際の言語能力向上につながる環境を作り出します。",
+      },
+      value_impact: {
+        section_title: "私たちの付加価値とインパクト",
+        added_value_title: "付加価値",
+        added_value_1: "リール都市圏における独自の異文化交流スペースを創出。",
+        added_value_2: "楽しく現代的な言語練習体験。",
+        added_value_3: "わかりやすく、プロフェッショナルで明確な進行構造。",
+        added_value_4: "新規参加者に対する高品質な受け入れとサポート。",
+        added_value_5: "活動的で忠実、そして国際的なコミュニティの形成。",
+        social_impact_title: "社会的インパクト",
+        social_impact_1: "孤独感の軽減と帰属意識の向上。",
+        social_impact_2: "地域に来た外国人のスムーズな統合を支援。",
+        social_impact_3: "誰でもアクセスできる言語能力の向上。",
+        social_impact_4: "学生・専門家・住民をつなぐ交流の場。",
+        social_impact_5: "地域の異文化理解の改善。",
+        economic_impact_title: "経済的インパクト",
+        economic_impact_1: "プロフェッショナルの語学スキル向上。",
+        economic_impact_2: "多言語人材を求める企業への魅力度向上。",
+        economic_impact_3: "イベントを受け入れるバーや地域パートナーの活性化。",
+        economic_impact_4:
+          "ワークショップ、研修、プライベートイベント、行政パートナーシップの創出可能性。",
+        environmental_impact_title: "環境的インパクト",
+        environmental_impact_1: "新しい会場を作らず、既存スペースを利用。",
+        environmental_impact_2:
+          "市内中心部での開催により、環境に優しい移動手段を促進。",
+        environmental_impact_3:
+          "紙などの物理的サポートを減らし、デジタルを優先して持続可能性を推進。",
+      },
+      mission: {
+        section_title: "私たちのミッション",
+        short_term: {
+          title: "短期（0–12ヶ月）",
+          item_1: "既存の週2回のイベントを構造化する。",
+          item_2: "言語マッチングの質を向上させる。",
+          item_3: "多様で魅力的なアクティビティを開発する。",
+          item_4: "ボランティアチームをトレーニングする。",
+          item_5:
+            "コミュニケーションの専門化（SNS、ビジュアル資料、明確なアイデンティティ）。",
+        },
+        medium_term: {
+          title: "中期（1–3年）",
+          item_1: "パートナーシップを拡大する（バー、大学、機関、企業）。",
+          item_2: "テーマ別言語ワークショップを提供する。",
+          item_3: "特別な日やイベント（文化、職業、旅行）を開催する。",
+          item_4: "内部教育ツールを開発する。",
+          item_5:
+            "言語キャリアの発展に特化した「プロフェッショナル」部門を作る。",
+        },
+        long_term: {
+          title: "長期（3–5年およびそれ以上）",
+          item_1: "地域の多言語主義における主要なプレイヤーになる。",
+          item_2: "トレーニングおよび異文化仲介のプログラムを開発する。",
+          item_3: "モデルを他の都市に拡張する。",
+          item_4: "地域の言語フェスティバルを開催する。",
+          item_5: "ヨーロッパの言語コミュニティネットワークを作る。",
+        },
+      },
+      vision: {
+        section_title: "私たちのビジョン",
+        short_term: {
+          title: "短期",
+          text: "誰もが自信を持って言語を練習できる包括的な空間を作る。",
+        },
+        medium_term: {
+          title: "中期",
+          text: "リールにおける言語交流と異文化イベントの基準となる。",
+        },
+        long_term: {
+          title: "長期",
+          text: "リールをヨーロッパの模範的な多言語都市にし、言語が人々の出会い、学習、キャリア成長の手段となるようにする。",
+        },
+      },
+      multinational: {
+        title: "多国籍",
+        description: "さまざまな文化の人々と出会い、視野を広げましょう。",
+      },
+      conversations: {
+        title: "会話",
+        description: "充実した会話に参加して、話す力を向上させましょう。",
+      },
+      apprentissage: {
+        title: "学習",
+        description: "楽しみながら言語を学び、交流しましょう。",
+      },
+      joinCommunity: {
+        title: "コミュニティに参加しよう",
+        description:
+          "すべてのイベントの情報を受け取り、コミュニティのメンバーとつながりましょう。",
+        linkText: "このリンクから参加する",
+      },
+      service: {
+        title: "私たちのサービス",
+        items: {
+          eventWeekly:
+            "毎週開催の語学交流イベント（ポリグロットカフェ）の運営。",
+          boardingPass:
+            "語学タンデムとボードゲームを組み合わせた“Boarding Pass”イベントの開催。",
+          informalHelp: "外国人、学生、新規来訪者への非公式な語学サポート。",
+          workshops:
+            "テーマ別ワークショップの実施（文化、ガイド付き会話、専門語彙など）。",
+          cohesion: "コミュニティメンバー向けの交流・団結イベントの実施。",
+          training: "誰でも参加できる語学トレーニングの開発検討。",
+          privateEvents:
+            "多言語イベント（プライベートまたはパブリック）の企画・運営。",
+          mediation: "異文化間コミュニケーションに関するコンサルティング。",
+          platform:
+            "サービスとコミュニケーションを一元化する内部プラットフォームの開発。",
+        },
+        footer:
+          "プラットフォームを通じて提供されるすべてのサービスは、総予算に対して手数料が発生します。",
+      },
+      contact: {
+        title: "お問い合わせ",
+        name_placeholder: "名前",
+        email_placeholder: "メールアドレス",
+        message_placeholder: "メッセージ",
+        send_button: "送信",
+      },
     },
-    conversations: {
-      title: "会話",
-      description: "充実した会話に参加して、話す力を向上させましょう。"
-    },
-    apprentissage: {
-      title: "学習",
-      description: "楽しみながら言語を学び、交流しましょう。"
-    },
-        joinCommunity: {
-      title: "コミュニティに参加しよう",
-      description: "すべてのイベントの情報を受け取り、コミュニティのメンバーとつながりましょう。",
-      linkText: "このリンクから参加する"
-    }
-},
+  },
 };
 
 i18n
