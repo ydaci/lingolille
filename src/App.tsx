@@ -42,15 +42,15 @@ export default function App() {
 
   const events = [
     {
-      title: t("events.cafe_polyglotte"),
-      date: t("events.every_wednesday"),
+      title: t("event.cafe_polyglotte"),
+      date: t("every_wednesday"),
       time: "20h",
       location: "Tir Na Nog",
       languageFlag: "🌍",
     },
     {
-      title: t("events.boarding_games"),
-      date: t("events.every_thursday"),
+      title: t("boarding_games"),
+      date: t("event.every_thursday"),
       time: "20h",
       location: "Ya's bar",
       languageFlag: "🌍",
@@ -239,357 +239,243 @@ export default function App() {
   <div className="container mx-auto max-w-4xl">
     <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
       <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-        <InfoCircle className="w-6 h-6 text-[#FF7A00]" /> Notre méthodologie
+        <InfoCircle className="w-6 h-6 text-[#FF7A00]" /> {t("methodology.title")}
       </h2>
       <p className="text-gray-600 leading-relaxed">
-       Lingo Lille adopte une approche centrée sur l’expérience sociale, l’interculturalité et l’apprentissage naturel des langues.
-
-Notre méthodologie repose sur plusieurs principes :
-Apprentissage par la pratique : la langue est utilisée dans des situations réelles, spontanées et motivantes.
+       {t("methodology.intro")}
 <ul className="mt-4 space-y-3">
   <li className="flex items-start gap-3">
     <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
     <span className="text-gray-600 leading-relaxed">
-      Apprentissage par la pratique : la langue est utilisée dans des situations réelles, spontanées et motivantes.
+      {t("methodology.principle_1_title")} : {t("methodology.principle_1_desc")}
     </span>
   </li>
   <li className="flex items-start gap-3">
     <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
     <span className="text-gray-600 leading-relaxed">
-      Approche conviviale et non scolaire : aucune pression, aucune évaluation, mais des activités ludiques, des jeux de société et des tandems linguistiques.
+      {t("methodology.principle_2_title")} : {t("methodology.principle_2_desc")}
     </span>
   </li>
   <li className="flex items-start gap-3">
     <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
     <span className="text-gray-600 leading-relaxed">
-      Intégration immédiate des nouveaux participants : accueil, explication du concept et accompagnement personnalisé.
+      {t("methodology.principle_3_title")} : {t("methodology.principle_3_desc")}
     </span>
   </li>
   <li className="flex items-start gap-3">
     <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
     <span className="text-gray-600 leading-relaxed">
-      Variété des activités : soirées thématiques, jeux linguistiques, défis interactifs, discussions guidées.
+      {t("methodology.principle_4_title")} : {t("methodology.principle_4_desc")}
     </span>
   </li>
   <li className="flex items-start gap-3">
     <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
     <span className="text-gray-600 leading-relaxed">
-      Briefer régulièrement les bénévoles et animateurs : consignes, gestion de groupe, écoute active et médiation culturelle.
+      {t("methodology.principle_5_title")} : {t("methodology.principle_5_desc")}
     </span>
   </li>
   <li className="flex items-start gap-3">
     <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
     <span className="text-gray-600 leading-relaxed">
-      Organisation structurée : accueil → matching linguistique → activités → rotations → temps libre.
-    </span>
+{t("methodology.principle_7_title")} : {t("methodology.principle_7_desc")}    </span>
   </li>
   <li className="flex items-start gap-3">
     <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
     <span className="text-gray-600 leading-relaxed">
-      Adaptation permanente : prise en compte des retours, révision des formats, gestion du bruit, des espaces, des besoins linguistiques.
+      {t("methodology.principle_6_title")} : {t("methodology.principle_6_desc")}
     </span>
   </li>
 </ul>
-Cette méthodologie crée un environnement rassurant, motivant et propice au développement réel des compétences linguistiques.
-
+{t("methodology.conclusion")}
       </p>
     </div>
   </div>
 </section>
 
-<section id="valeur-ajoutee" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
-  <div className="container mx-auto max-w-4xl">
-    <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-8">
-            <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-        <InfoCircle className="w-6 h-6 text-[#FF7A00]" />Notre valeur ajoutée et impact
-      </h2>
+    <section id="valeur-ajoutee" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
+      <div className="container mx-auto max-w-4xl">
+        <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-8">
+          <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
+            <InfoCircle className="w-6 h-6 text-[#FF7A00]" />
+            {t("value_impact.section_title")}
+          </h2>
 
-      {/* Valeur ajoutée */}
-      <div>
-        <h2 className="text-gray-900 text-2xl font-semibold mb-4">Valeur ajoutée</h2>
-        <ul className="space-y-3">
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Création d’un espace interculturel unique dans la métropole lilloise.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Expérience ludique et moderne de la pratique linguistique.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Structure professionnelle, claire et facilement compréhensible.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Qualité d’accueil et d'intégration des nouveaux arrivants.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Formation d’une communauté active, fidèle et internationale.
-            </span>
-          </li>
-        </ul>
+          {/* Valeur ajoutée */}
+          <div>
+            <h2 className="text-gray-900 text-2xl font-semibold mb-4">{t("value_impact.added_value_title")}</h2>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.added_value_1")}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.added_value_2")}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.added_value_3")}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.added_value_4")}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.added_value_5")}</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Impact social */}
+          <div>
+            <h2 className="text-gray-900 text-2xl font-semibold mb-4">{t("value_impact.social_impact_title")}</h2>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.social_impact_1")}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.social_impact_2")}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.social_impact_3")}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.social_impact_4")}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.social_impact_5")}</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Impact économique */}
+          <div>
+            <h2 className="text-gray-900 text-2xl font-semibold mb-4">{t("value_impact.economic_impact_title")}</h2>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.economic_impact_1")}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.economic_impact_2")}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.economic_impact_3")}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.economic_impact_4")}</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Impact environnemental */}
+          <div>
+            <h2 className="text-gray-900 text-2xl font-semibold mb-4">{t("value_impact.environmental_impact_title")}</h2>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.environmental_impact_1")}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.environmental_impact_2")}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                <span className="text-gray-600 leading-relaxed">{t("value_impact.environmental_impact_3")}</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
       </div>
+    </section>
 
-      {/* Impact social */}
-      <div>
-        <h2 className="text-gray-900 text-2xl font-semibold mb-4">Impact social</h2>
-        <ul className="space-y-3">
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Réduction de la solitude et renforcement du sentiment d’appartenance.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Facilitation de l’intégration des étrangers dans la région.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Développement de compétences linguistiques accessibles à tous.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Mise en relation d’étudiants, de professionnels et d’habitants.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Amélioration du climat interculturel local.
-            </span>
-          </li>
-        </ul>
+    <section id="mission" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
+      <div className="container mx-auto max-w-4xl">
+        <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
+          <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
+            <InfoCircle className="w-6 h-6 text-[#FF7A00]" />
+            {t("mission.section_title")}
+          </h2>
+
+          {/* Court terme */}
+          <div>
+            <h2 className="text-gray-900 text-2xl font-semibold mb-4">{t("mission.short_term.title")}</h2>
+            <ul className="space-y-3">
+              {Array.from({ length: 5 }, (_, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                  <span className="text-gray-600 leading-relaxed">{t(`mission.short_term.item_${i + 1}`)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Moyen terme */}
+          <div>
+            <h2 className="text-gray-900 text-2xl font-semibold mb-4">{t("mission.medium_term.title")}</h2>
+            <ul className="space-y-3">
+              {Array.from({ length: 5 }, (_, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                  <span className="text-gray-600 leading-relaxed">{t(`mission.medium_term.item_${i + 1}`)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Long terme */}
+          <div>
+            <h2 className="text-gray-900 text-2xl font-semibold mb-4">{t("mission.long_term.title")}</h2>
+            <ul className="space-y-3">
+              {Array.from({ length: 5 }, (_, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+                  <span className="text-gray-600 leading-relaxed">{t(`mission.long_term.item_${i + 1}`)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+        </div>
       </div>
-
-      {/* Impact économique */}
-      <div>
-        <h2 className="text-gray-900 text-2xl font-semibold mb-4">Impact économique</h2>
-        <ul className="space-y-3">
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Amélioration des compétences linguistiques des professionnels.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Attractivité renforcée pour les entreprises cherchant des profils multilingues.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Dynamisation des bars et partenaires locaux accueillant les événements.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Potentiel de création d’ateliers, formations, événements privés et partenariats institutionnels.
-            </span>
-          </li>
-        </ul>
-      </div>
-
-      {/* Impact environnemental */}
-      <div>
-        <h2 className="text-gray-900 text-2xl font-semibold mb-4">Impact environnemental</h2>
-        <ul className="space-y-3">
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Utilisation d’espaces déjà existants plutôt que de créer de nouveaux lieux.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Promotion de mobilités douces grâce à des événements organisés en centre-ville.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Orientation vers le durable en réduisant les supports physiques et en privilégiant le numérique.
-            </span>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="mission" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
-  <div className="container mx-auto max-w-4xl">
-    <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
-      <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-        <InfoCircle className="w-6 h-6 text-[#FF7A00]" /> Notre mission
-      </h2>
-      {/* Court terme */}
-      <div>
-        <h2 className="text-gray-900 text-2xl font-semibold mb-4">Court terme (0–12 mois)</h2>
-        <ul className="space-y-3">
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Structurer les deux événements hebdomadaires existants.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Améliorer la qualité du matching linguistique.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Développer des activités variées et attractives.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Former l’équipe de bénévoles.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Professionnaliser la communication (réseaux sociaux, supports visuels, identité claire).
-            </span>
-          </li>
-        </ul>
-      </div>
-
-      {/* Moyen terme */}
-      <div>
-        <h2 className="text-gray-900 text-2xl font-semibold mb-4">Moyen terme (1–3 ans)</h2>
-        <ul className="space-y-3">
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Élargir les partenariats (bars, universités, institutions, entreprises).
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Proposer des ateliers linguistiques thématiques.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Lancer des journées ou soirées spéciales (culture, métiers, voyages).
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Développer des outils pédagogiques internes.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Créer un pôle “professionnels” dédié à l’évolution de carrière linguistique.
-            </span>
-          </li>
-        </ul>
-      </div>
-
-      {/* Long terme */}
-      <div>
-        <h2 className="text-gray-900 text-2xl font-semibold mb-4">Long terme (3–5 ans et plus)</h2>
-        <ul className="space-y-3">
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Devenir un acteur incontournable du multilinguisme dans la région.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Développer une offre de formation et de médiation interculturelle.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Étendre le modèle à d’autres villes.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Organiser un festival linguistique régional.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-            <span className="text-gray-600 leading-relaxed">
-              Créer un réseau européen de communautés linguistiques.
-            </span>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
 <section id="vision" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
   <div className="container mx-auto max-w-4xl">
     <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-8">
-
+      
       {/* Gros titre */}
       <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-        <InfoCircle className="w-6 h-6 text-[#FF7A00]" /> Notre vision
+        <InfoCircle className="w-6 h-6 text-[#FF7A00]" /> {t("vision.section_title")}
       </h2>
 
       {/* Court terme */}
       <div>
-        <h3 className="text-gray-800 text-xl font-medium mb-2">Court terme</h3>
-        <p className="text-gray-600 leading-relaxed">
-          Construire un espace inclusif où chacun peut pratiquer les langues en toute confiance.
-        </p>
+        <h3 className="text-gray-800 text-xl font-medium mb-2">{t("vision.short_term.title")}</h3>
+        <p className="text-gray-600 leading-relaxed">{t("vision.short_term.text")}</p>
       </div>
 
       {/* Moyen terme */}
       <div>
-        <h3 className="text-gray-800 text-xl font-medium mb-2">Moyen terme</h3>
-        <p className="text-gray-600 leading-relaxed">
-          Devenir la référence lilloise en matière d’échanges linguistiques et d’événements interculturels.
-        </p>
+        <h3 className="text-gray-800 text-xl font-medium mb-2">{t("vision.medium_term.title")}</h3>
+        <p className="text-gray-600 leading-relaxed">{t("vision.medium_term.text")}</p>
       </div>
 
       {/* Long terme */}
       <div>
-        <h3 className="text-gray-800 text-xl font-medium mb-2">Long terme</h3>
-        <p className="text-gray-600 leading-relaxed">
-          Faire de Lille une ville plurilingue modèle en Europe, où la langue devient un vecteur de rencontre, d’apprentissage et de croissance professionnelle.
-        </p>
+        <h3 className="text-gray-800 text-xl font-medium mb-2">{t("vision.long_term.title")}</h3>
+        <p className="text-gray-600 leading-relaxed">{t("vision.long_term.text")}</p>
       </div>
 
     </div>
@@ -602,9 +488,9 @@ Cette méthodologie crée un environnement rassurant, motivant et propice au dé
       <section id="events" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="container mx-auto">
           <div className="text-center mb-12 space-y-4">
-            <h2 className="text-gray-900">Nos événements</h2>
+            <h2 className="text-gray-900">{t("event.title")}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Rejoins-nous lors de nos rencontres hebdomadaires pour pratiquer les langues dans une ambiance conviviale.
+              {t("event.description")}
             </p>
           </div>
 
@@ -621,9 +507,9 @@ Cette méthodologie crée un environnement rassurant, motivant et propice au dé
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
-              <h2 className="text-gray-900">Une communauté ouverte</h2>
+              <h2 className="text-gray-900">{t("community_title")}</h2>
               <p className="text-gray-600">
-                Une communauté ouverte où chacun peut pratiquer, apprendre et partager sa langue.
+               {t("community_desc")} 
               </p>
 
               <div className="grid sm:grid-cols-3 gap-8">
@@ -631,21 +517,21 @@ Cette méthodologie crée un environnement rassurant, motivant et propice au dé
                   <div className="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center">
                     <Globe className="w-8 h-8 text-[#FF7A00]" />
                   </div>
-                  <span className="text-gray-700">Multinational</span>
+                  <span className="text-gray-700">{t("multinational.title")}</span>
                 </div>
 
                 <div className="flex flex-col items-center text-center space-y-3">
                   <div className="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center">
                     <MessageCircle className="w-8 h-8 text-[#FF7A00]" />
                   </div>
-                  <span className="text-gray-700">Conversations</span>
+                  <span className="text-gray-700">{t("conversations.title")}</span>
                 </div>
 
                 <div className="flex flex-col items-center text-center space-y-3">
                   <div className="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center">
                     <BookOpen className="w-8 h-8 text-[#FF7A00]" />
                   </div>
-                  <span className="text-gray-700">Apprentissage</span>
+                  <span className="text-gray-700">{t("apprentissage.title")}</span>
                 </div>
               </div>
             </div>
@@ -670,22 +556,28 @@ Cette méthodologie crée un environnement rassurant, motivant et propice au dé
         <div className="container mx-auto max-w-4xl">
           <div className="text-center space-y-8">
             <div className="space-y-4">
-              <h2 className="text-gray-900">Rejoins la communauté</h2>
+              <h2 className="text-gray-900">{t("joinCommunity.title")}</h2>
               <p className="text-gray-600">
-                Reste informé de tous nos événements et connecte-toi avec les membres de la communauté.
+                {t("joinCommunity.description")}
               </p>
             </div>
 
-            <div className="flex flex-col items-center gap-8 bg-white p-12 rounded-3xl shadow-lg">
-            <img  width="240" height="240"   src={qrcode} alt="LingoLille" className="rounded-full object-cover" />
+<div className="flex flex-col items-center gap-8 bg-white p-12 rounded-10xl shadow-lg">
+  <img
+    width="300"
+    height="300"
+    src={qrcode}
+    alt="LingoLille"
+    className="w-[300px] h-[300px] object-contain rounded-xl"
+  />
 
-              <Button 
-                size="lg"
-                className="rounded-full bg-[#FF7A00] hover:bg-[#E66D00] text-white px-12"
-              >
-                Rejoindre via ce lien
-              </Button>
-            </div>
+  <Button 
+    size="lg"
+    className="rounded-full bg-[#FF7A00] hover:bg-[#E66D00] text-white px-12"
+  >
+    {t("joinCommunity.linkText")}
+  </Button>
+</div>
           </div>
         </div>
       </section>
