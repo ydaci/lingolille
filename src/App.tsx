@@ -290,59 +290,85 @@ export default function App() {
 
       {/* À propos Section */}
       {/* About Us Section */}
-      <section
-        id="about-us"
-        className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 scroll-mt-28"
-      >
-        <div className="container mx-auto max-w-4xl">
-          <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
-            <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
-              {t("about_us")}
-            </h2>
-            <p className="text-gray-600 leading-relaxed whitespace-pre-line">
-              {t("about_us_description")}
-            </p>
+<section
+  id="about-us"
+  className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 scroll-mt-28"
+>
+  <div className="container mx-auto max-w-4xl">
+    <div
+      className="bg-white border-4 rounded-3xl shadow-lg"
+      style={{ borderColor: '#f26f33' }}
+    >
+      <div className="p-6 sm:p-8 md:p-10 space-y-6 text-justify">
 
-            <h3 className="text-gray-900 font-semibold text-lg mt-6">
-              {t("about_us_description_1")}
-            </h3>
-            <ul className="space-y-3 mt-2">
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                <span className="text-gray-600 leading-relaxed">
-                  {t("about_us_description_2")}
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                <span className="text-gray-600 leading-relaxed">
-                  {t("about_us_description_3")}
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                <span className="text-gray-600 leading-relaxed">
-                  {t("about_us_description_4")}
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                <span className="text-gray-600 leading-relaxed">
-                  {t("about_us_description_5")}
-                </span>
-              </li>
-            </ul>
-          </div>
+        {/* Logo à gauche, texte à droite */}
+        <div className="flex items-center gap-3">
+          <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8" />
+          <h2 className="text-2xl font-bold text-gray-900">
+            <span className="border-b-2 border-[#FF7A00] pb-1">
+              {t("about_us")}
+            </span>
+          </h2>
         </div>
-      </section>
+
+        <p className="text-gray-600 leading-relaxed whitespace-pre-line">
+          {t("about_us_description")}
+        </p>
+        <br/>
+
+        <h3 className="text-gray-900 font-semibold text-lg mt-6">
+          {t("about_us_description_1")}
+        </h3>
+        <br/>
+
+        <ol className="space-y-3 mt-2">
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("about_us_description_2")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("about_us_description_3")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("about_us_description_4")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("about_us_description_5")}
+            </span>
+          </li>
+        </ol>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
 
       <section
         id="qui-sommes-nous"
         className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28"
       >
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
+              <div
+      className="bg-white border-4 rounded-3xl shadow-lg"
+      style={{ borderColor: '#f26f33' }}
+    >
             <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
               <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
               {t("who_we_are")}
@@ -358,7 +384,10 @@ export default function App() {
         id="notre-methodologie"
         className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28"
       >
-        <div className="container mx-auto max-w-4xl">
+            <div
+      className="bg-white border-4 rounded-3xl shadow-lg"
+      style={{ borderColor: '#f26f33' }}
+    >
           <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
             <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
               <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
@@ -429,7 +458,10 @@ export default function App() {
         className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28"
       >
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-8">
+              <div
+      className="bg-white border-4 rounded-3xl shadow-lg"
+      style={{ borderColor: '#f26f33' }}
+    >
             <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
               <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
               {t("value_impact.section_title")}
@@ -578,7 +610,10 @@ export default function App() {
 
       <section id="mission" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
+              <div
+      className="bg-white border-4 rounded-3xl shadow-lg"
+      style={{ borderColor: '#f26f33' }}
+    >
             <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
               <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
               {t("mission.section_title")}
@@ -640,7 +675,10 @@ export default function App() {
 
       <section id="vision" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-8">
+              <div
+      className="bg-white border-4 rounded-3xl shadow-lg"
+      style={{ borderColor: '#f26f33' }}
+    >
             {/* Gros titre */}
             <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
               <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
@@ -683,7 +721,10 @@ export default function App() {
 
       {/* Events Section */}
       <section id="events" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="container mx-auto">
+            <div
+      className="bg-white border-4 rounded-3xl shadow-lg"
+      style={{ borderColor: '#f26f33' }}
+    >
           <div className="text-center mb-12 space-y-4">
             <h2 className="text-gray-900">{t("event.title")}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -702,7 +743,10 @@ export default function App() {
       {/* Community Section */}
       <section id="community" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div
+      className="bg-white border-4 rounded-3xl shadow-lg"
+      style={{ borderColor: '#f26f33' }}
+    >
             <div className="space-y-8">
               <h2 className="text-gray-900">{t("community_title")}</h2>
               <p className="text-gray-600">{t("community_desc")}</p>
@@ -746,7 +790,10 @@ export default function App() {
         className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-white"
       >
         <div className="container mx-auto max-w-4xl">
-          <div className="text-center space-y-8">
+              <div
+      className="bg-white border-4 rounded-3xl shadow-lg"
+      style={{ borderColor: '#f26f33' }}
+    >
             <div className="space-y-4">
               <h2 className="text-gray-900">{t("joinCommunity.title")}</h2>
               <p className="text-gray-600">{t("joinCommunity.description")}</p>
@@ -777,7 +824,10 @@ export default function App() {
         className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28"
       >
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
+              <div
+      className="bg-white border-4 rounded-3xl shadow-lg"
+      style={{ borderColor: '#f26f33' }}
+    >
             <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
               <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
               {" "}
@@ -859,7 +909,10 @@ export default function App() {
       </section>
 
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
-        <div className="container mx-auto max-w-4xl bg-white border border-gray-200 rounded-3xl p-10 shadow-lg">
+            <div
+      className="bg-white border-4 rounded-3xl shadow-lg"
+      style={{ borderColor: '#f26f33' }}
+    >
           <h2 className="text-gray-900 text-2xl font-semibold mb-6">
             {t("contact.title")}
           </h2>
