@@ -297,7 +297,8 @@ export default function App() {
         <div className="container mx-auto max-w-4xl">
           <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
             <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <InfoCircle className="w-6 h-6 text-[#FF7A00]" /> {t("about_us")}
+              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
+              {t("about_us")}
             </h2>
             <p className="text-gray-600 leading-relaxed whitespace-pre-line">
               {t("about_us_description")}
@@ -343,7 +344,7 @@ export default function App() {
         <div className="container mx-auto max-w-4xl">
           <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
             <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <InfoCircle className="w-6 h-6 text-[#FF7A00]" />
+              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
               {t("who_we_are")}
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -360,7 +361,8 @@ export default function App() {
         <div className="container mx-auto max-w-4xl">
           <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
             <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <InfoCircle className="w-6 h-6 text-[#FF7A00]" />{" "}
+              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
+              {" "}
               {t("methodology.title")}
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -429,7 +431,7 @@ export default function App() {
         <div className="container mx-auto max-w-4xl">
           <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-8">
             <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <InfoCircle className="w-6 h-6 text-[#FF7A00]" />
+              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
               {t("value_impact.section_title")}
             </h2>
 
@@ -578,7 +580,7 @@ export default function App() {
         <div className="container mx-auto max-w-4xl">
           <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
             <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <InfoCircle className="w-6 h-6 text-[#FF7A00]" />
+              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
               {t("mission.section_title")}
             </h2>
 
@@ -641,7 +643,8 @@ export default function App() {
           <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-8">
             {/* Gros titre */}
             <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <InfoCircle className="w-6 h-6 text-[#FF7A00]" />{" "}
+              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
+              {" "}
               {t("vision.section_title")}
             </h2>
 
@@ -776,7 +779,8 @@ export default function App() {
         <div className="container mx-auto max-w-4xl">
           <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
             <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <InfoCircle className="w-6 h-6 text-[#FF7A00]" />{" "}
+              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
+              {" "}
               {t("service.title")}
             </h2>
 
