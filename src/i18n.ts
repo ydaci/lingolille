@@ -6,7 +6,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 const resources = {
   fr: {
     translation: {
-      hero_title: "Rejoins la communauté\n",
+      hero_title: "Etape 2 : Rejoins la communauté\n",
       hero_text:
         "Des rencontres pour pratiquer les langues à Lille, chaque semaine.\n\nCredo : “Les liens se créent, les langues connectent.”",
       see_events: "Voir les prochains événements",

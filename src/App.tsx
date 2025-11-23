@@ -17,6 +17,7 @@ import emailjs from "emailjs-com";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Flag from "react-world-flags";
+import LanguageSelector from "./components/LanguageSelector";
 
 export default function App() {
   const { t, i18n } = useTranslation();
@@ -92,9 +93,8 @@ export default function App() {
                 >
                   {t("about")}
                   <svg
-                    className={`w-4 h-4 ml-1 transition-transform duration-200 ${
-                      aboutOpen ? "rotate-180" : ""
-                    }`}
+                    className={`w-4 h-4 ml-1 transition-transform duration-200 ${aboutOpen ? "rotate-180" : ""
+                      }`}
                     fill="none"
                     stroke="currentColor"
                     strokeWidth={2}
@@ -215,71 +215,34 @@ export default function App() {
               </div>
 
               {/* Language Switcher */}
-              <div className="flex space-x-2">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => changeLanguage("fr")}
-                  className="flex items-center gap-1"
-                >
-                  <Flag code="FR" alt="FR" className="w-4 h-4" /> FR
-                </Button>
+              <LanguageSelector changeLanguage={changeLanguage} />
 
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => changeLanguage("en")}
-                  className="flex items-center gap-1"
-                >
-                  <Flag code="GB" alt="EN" className="w-4 h-4" /> EN
-                </Button>
-
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => changeLanguage("es")}
-                  className="flex items-center gap-1"
-                >
-                  <Flag code="ES" alt="ES" className="w-4 h-4" /> ES
-                </Button>
-
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => changeLanguage("it")}
-                  className="flex items-center gap-1"
-                >
-                  <Flag code="IT" alt="IT" className="w-4 h-4" /> IT
-                </Button>
-
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => changeLanguage("zh")}
-                  className="flex items-center gap-1"
-                >
-                  <Flag code="CN" alt="ZH" className="w-4 h-4" /> ZH
-                </Button>
-
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => changeLanguage("ja")}
-                  className="flex items-center gap-1"
-                >
-                  <Flag code="JP" alt="JP" className="w-4 h-4" /> JP
-                </Button>
-              </div>
             </nav>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
+
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
+              <div className="space-y-4">
+                <h1 className="text-gray-900">
+                  Etape 1 : Notre méthode
+                  <br />
+                  <span className="text-[#FF7A00]">Maîtrise une langue rapidement avec un enseignant polyglotte expérimenté près de chez toi !</span>
+                </h1>
+                <p className="text-gray-600 max-w-lg">{t("hero_text")}</p>
+              </div>
+              <Button
+                size="lg"
+                className="rounded-full bg-[#FF7A00] hover:bg-[#E66D00] text-white px-8"
+                onClick={() => scrollToSection("services")}
+              >
+                {t("services")}
+              </Button>
               <div className="space-y-4">
                 <h1 className="text-gray-900">
                   {t("hero_title")}
@@ -309,10 +272,10 @@ export default function App() {
             </div>
 
             <div className="relative">
-              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center">
                 <img
-                  width="240"
-                  height="240"
+                  width="500"
+                  height="500"
                   src={instagram}
                   alt="LingoLille"
                   className="rounded-full object-cover"
