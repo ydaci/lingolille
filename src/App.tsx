@@ -24,6 +24,8 @@ export default function App() {
 
   const [aboutOpen, setAboutOpen] = useState<boolean>(false);
   const [joinOpen, setJoinOpen] = useState(false);
+    // état pour le menu mobile
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -67,160 +69,269 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
-            {/* Logo */}
-            <div className="flex items-center gap-3">
-              <img
-                width="70"
-                height="70"
-                src={LingoLilleLogo}
-                alt="LingoLille"
-                className="rounded-full object-cover"
+{/* Header */}
+<header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex items-center justify-between h-20 relative">
+
+      {/* Logo */}
+      <div className="flex items-center gap-3">
+        <img
+          width="70"
+          height="70"
+          src={LingoLilleLogo}
+          alt="LingoLille"
+          className="rounded-full object-cover"
+        />
+      </div>
+
+      {/* Menu desktop */}
+      <nav className="hidden md:flex items-center gap-2 relative">
+        {/* Menu déroulant À propos */}
+        <div className="relative">
+          <Button
+            variant="ghost"
+            className="rounded-full hover:bg-orange-50 hover:text-[#FF7A00] flex items-center gap-1"
+            onClick={() => setAboutOpen(!aboutOpen)}
+          >
+            {t("about")}
+            <svg
+              className={`w-4 h-4 ml-1 transition-transform duration-200 ${
+                aboutOpen ? "rotate-180" : ""
+              }`}
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
               />
-            </div>
+            </svg>
+          </Button>
 
-            {/* Menu desktop */}
-            <nav className="hidden md:flex items-center gap-2 relative">
-              {/* Menu déroulant À propos */}
-              <div className="relative">
-                <Button
-                  variant="ghost"
-                  className="rounded-full hover:bg-orange-50 hover:text-[#FF7A00] flex items-center gap-1"
-                  onClick={() => setAboutOpen(!aboutOpen)}
-                >
-                  {t("about")}
-                  <svg
-                    className={`w-4 h-4 ml-1 transition-transform duration-200 ${aboutOpen ? "rotate-180" : ""
-                      }`}
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    viewBox="0 0 24 24"
+          {aboutOpen && (
+            <div className="absolute left-0 mt-2 w-56 bg-white border border-gray-200 rounded-xl shadow-lg z-50">
+              <ul className="flex flex-col">
+                <li>
+                  <button
+                    className="w-full text-left px-4 py-2 hover:bg-orange-50 hover:text-[#FF7A00] rounded-t-xl"
+                    onClick={() => scrollToSection("about-us")}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </Button>
-
-                {aboutOpen && (
-                  <div className="absolute left-0 mt-2 w-56 bg-white border border-gray-200 rounded-xl shadow-lg z-50">
-                    <ul className="flex flex-col">
-                      <li>
-                        <button
-                          className="w-full text-left px-4 py-2 hover:bg-orange-50 hover:text-[#FF7A00] rounded-t-xl"
-                          onClick={() => scrollToSection("about-us")}
-                        >
-                          {t("about_us")}
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          className="w-full text-left px-4 py-2 hover:bg-orange-50 hover:text-[#FF7A00]"
-                          onClick={() => scrollToSection("qui-sommes-nous")}
-                        >
-                          {t("who_we_are")}
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          className="w-full text-left px-4 py-2 hover:bg-orange-50 hover:text-[#FF7A00]"
-                          onClick={() => scrollToSection("notre-methodologie")}
-                        >
-                          {t("our_methodology")}
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          className="w-full text-left px-4 py-2 hover:bg-orange-50 hover:text-[#FF7A00]"
-                          onClick={() => scrollToSection("valeur-impact")}
-                        >
-                          {t("our_value_impact")}
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          className="w-full text-left px-4 py-2 hover:bg-orange-50 hover:text-[#FF7A00]"
-                          onClick={() => scrollToSection("mission")}
-                        >
-                          {t("our_mission")}
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          className="w-full text-left px-4 py-2 hover:bg-orange-50 hover:text-[#FF7A00] rounded-b-xl"
-                          onClick={() => scrollToSection("vision")}
-                        >
-                          {t("our_vision")}
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-
-              {/* Autres boutons */}
-              <Button variant="ghost" onClick={() => scrollToSection("events")}>
-                {t("events_section")}
-              </Button>
-              <Button
-                variant="ghost"
-                onClick={() => scrollToSection("community")}
-              >
-                {t("community_section")}
-              </Button>
-              <Button
-                variant="ghost"
-                className="rounded-full hover:bg-orange-50 hover:text-[#FF7A00]"
-                onClick={() => scrollToSection("services")}
-              >
-                {t("services_section")}
-              </Button>
-
-              {/* Menu déroulant Nous rejoindre */}
-              <div className="relative">
-                <Button
-                  className="rounded-full bg-[#FF7A00] hover:bg-[#E66D00] text-white"
-                  onClick={() => setJoinOpen(!joinOpen)}
-                >
-                  {t("join_us")}
-                </Button>
-                {joinOpen && (
-                  <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-lg z-50 flex flex-col">
-                    <button
-                      className="px-4 py-2 text-gray-700 hover:bg-orange-50 text-left rounded-t-xl"
-                      onClick={() => scrollToSection("contact")}
-                    >
-                      {t("contact_us")}
-                    </button>
-                    <button
-                      className="px-4 py-2 text-gray-400 cursor-not-allowed text-left"
-                      disabled
-                    >
-                      {t("sign_up")}
-                    </button>
-                    <button
-                      className="px-4 py-2 text-gray-400 cursor-not-allowed text-left rounded-b-xl"
-                      disabled
-                    >
-                      {t("donate")}
-                    </button>
-                  </div>
-                )}
-              </div>
-
-              {/* Language Switcher */}
-              <LanguageSelector changeLanguage={changeLanguage} />
-
-            </nav>
-          </div>
+                    {t("about_us")}
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="w-full text-left px-4 py-2 hover:bg-orange-50 hover:text-[#FF7A00]"
+                    onClick={() => scrollToSection("qui-sommes-nous")}
+                  >
+                    {t("who_we_are")}
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="w-full text-left px-4 py-2 hover:bg-orange-50 hover:text-[#FF7A00]"
+                    onClick={() => scrollToSection("notre-methodologie")}
+                  >
+                    {t("our_methodology")}
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="w-full text-left px-4 py-2 hover:bg-orange-50 hover:text-[#FF7A00]"
+                    onClick={() => scrollToSection("valeur-impact")}
+                  >
+                    {t("our_value_impact")}
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="w-full text-left px-4 py-2 hover:bg-orange-50 hover:text-[#FF7A00]"
+                    onClick={() => scrollToSection("mission")}
+                  >
+                    {t("our_mission")}
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="w-full text-left px-4 py-2 hover:bg-orange-50 hover:text-[#FF7A00] rounded-b-xl"
+                    onClick={() => scrollToSection("vision")}
+                  >
+                    {t("our_vision")}
+                  </button>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
-      </header>
+
+        {/* Autres boutons desktop */}
+        <Button variant="ghost" onClick={() => scrollToSection("events")}>
+          {t("events_section")}
+        </Button>
+        <Button variant="ghost" onClick={() => scrollToSection("community")}>
+          {t("community_section")}
+        </Button>
+        <Button
+          variant="ghost"
+          className="rounded-full hover:bg-orange-50 hover:text-[#FF7A00]"
+          onClick={() => scrollToSection("services")}
+        >
+          {t("services_section")}
+        </Button>
+
+        {/* Menu déroulant Nous rejoindre */}
+        <div className="relative">
+          <Button
+            className="rounded-full bg-[#FF7A00] hover:bg-[#E66D00] text-white"
+            onClick={() => setJoinOpen(!joinOpen)}
+          >
+            {t("join_us")}
+          </Button>
+          {joinOpen && (
+            <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-lg z-50 flex flex-col">
+              <button
+                className="px-4 py-2 text-gray-700 hover:bg-orange-50 text-left rounded-t-xl"
+                onClick={() => scrollToSection("contact")}
+              >
+                {t("contact_us")}
+              </button>
+              <button
+                className="px-4 py-2 text-gray-400 cursor-not-allowed text-left"
+                disabled
+              >
+                {t("sign_up")}
+              </button>
+              <button
+                className="px-4 py-2 text-gray-400 cursor-not-allowed text-left rounded-b-xl"
+                disabled
+              >
+                {t("donate")}
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* Language Switcher */}
+        <LanguageSelector changeLanguage={changeLanguage} />
+      </nav>
+
+      {/* Burger mobile */}
+      <div className="md:hidden flex-shrink-0">
+        <button
+          onClick={() => setMobileOpen(!mobileOpen)}
+          className="p-2 rounded-lg hover:bg-gray-100 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-7 w-7"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d={
+                mobileOpen
+                  ? "M6 18L18 6M6 6l12 12"
+                  : "M4 6h16M4 12h16M4 18h16"
+              }
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  {/* Menu mobile déroulant */}
+  {mobileOpen && (
+    <div className="absolute top-20 left-0 right-0 bg-white shadow-lg border-b border-gray-200 md:hidden z-40">
+      <ul className="flex flex-col p-4 space-y-2">
+        {/* Menu déroulant À propos complet */}
+        <li>
+          <button
+            onClick={() => scrollToSection("about-us")}
+            className="w-full text-left font-semibold"
+          >
+            {t("about_us")}
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => scrollToSection("qui-sommes-nous")}
+            className="w-full text-left"
+          >
+            {t("who_we_are")}
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => scrollToSection("notre-methodologie")}
+            className="w-full text-left"
+          >
+            {t("our_methodology")}
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => scrollToSection("valeur-impact")}
+            className="w-full text-left"
+          >
+            {t("our_value_impact")}
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => scrollToSection("mission")}
+            className="w-full text-left"
+          >
+            {t("our_mission")}
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => scrollToSection("vision")}
+            className="w-full text-left"
+          >
+            {t("our_vision")}
+          </button>
+        </li>
+
+        {/* Autres boutons */}
+        <li>
+          <button onClick={() => scrollToSection("events")} className="w-full text-left">
+            {t("events_section")}
+          </button>
+        </li>
+        <li>
+          <button onClick={() => scrollToSection("community")} className="w-full text-left">
+            {t("community_section")}
+          </button>
+        </li>
+        <li>
+          <button onClick={() => scrollToSection("services")} className="w-full text-left">
+            {t("services_section")}
+          </button>
+        </li>
+        <li>
+          <button onClick={() => scrollToSection("contact")} className="w-full text-left font-semibold text-[#FF7A00]">
+            {t("join_us")}
+          </button>
+        </li>
+
+        {/* Language selector */}
+        <li>
+          <LanguageSelector changeLanguage={changeLanguage} />
+        </li>
+      </ul>
+    </div>
+  )}
+</header>
 
       {/* Hero Section */}
 
