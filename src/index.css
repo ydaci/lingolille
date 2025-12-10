@@ -1754,3 +1754,31 @@ html {
   inherits: false;
   initial-value: 1;
 }
+
+/* Conteneur des boxes */
+.box-container {
+  display: flex;
+  flex-wrap: wrap; /* permet que les boxes passent à la ligne sur petit écran */
+  gap: 20px; /* espace entre les boxes */
+}
+
+/* Chaque box */
+.box {
+  flex: 1 1 300px; /* largeur minimum de 300px, s'adapte si plus d'espace */
+  border: 2px solid orange; /* ta bordure orange */
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 200px; /* hauteur minimum commune */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pour répartir le contenu verticalement */
+}
+
+/* Si texte trop long, on peut limiter et ajouter "..." */
+.box p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* limite à 5 lignes */
+  -webkit-box-orient: vertical;
+}

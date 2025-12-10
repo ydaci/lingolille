@@ -399,22 +399,22 @@ export default function App() {
         </div>
       </section>
 
-      {/* À propos Section */}
+      {/* À propos Section */} 
       {/* About Us Section */}
 <section
   id="about-us"
   className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 scroll-mt-28"
 >
   <div className="container mx-auto max-w-4xl">
-    <div
-      className="bg-white border-4 rounded-3xl shadow-lg"
-      style={{ borderColor: '#f26f33' }}
-    >
-      <div className="p-6 sm:p-8 md:p-10 space-y-6 text-justify">
+    <div className="bg-white border-4 border-[#f26f33] rounded-3xl shadow-lg" style={{ borderColor: '#f26f33' }}>
+      <div className="p-6 sm:p-8 md:p-10 space-y-6 text-justify 
+                      flex flex-col justify-between 
+                      min-h-[250px] md:min-h-[250px] 
+                      h-auto md:h-[250px]">
 
         {/* Logo à gauche, texte à droite */}
         <div className="flex items-center gap-3">
-          <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8" />
+          <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 rounded-full" />
           <h2 className="text-2xl font-bold text-gray-900">
             <span className="border-b-2 border-[#FF7A00] pb-1">
               {t("about_us")}
@@ -465,610 +465,616 @@ export default function App() {
 </section>
 
 
+ {/*Section Qui sommes-nous */} 
 
-
-
-
-
-
-      <section
-        id="qui-sommes-nous"
-        className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28"
-      >
-        <div className="container mx-auto max-w-4xl">
-              <div
-      className="bg-white border-4 rounded-3xl shadow-lg"
+<section
+  id="qui-sommes-nous"
+  className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28"
+>
+  <div className="container mx-auto max-w-4xl">
+    <div
+      className="bg-white border-4 rounded-3xl shadow-lg flex flex-col justify-between p-6 sm:p-8 md:p-10 min-h-[250px] md:h-[250px] h-auto"
       style={{ borderColor: '#f26f33' }}
     >
-            <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
-              {t("who_we_are")}
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              {t("who_we_are_description")}
-            </p>
-          </div>
-        </div>
-      </section>
+      <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
+        <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2 rounded-full" />
+        {t("who_we_are")}
+      </h2>
 
-      <section
-        id="notre-methodologie"
-        className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28"
-      >
-            <div
-      className="bg-white border-4 rounded-3xl shadow-lg"
-      style={{ borderColor: '#f26f33' }}
+      <p className="text-gray-600 leading-relaxed whitespace-pre-line">
+        {t("who_we_are_description")}
+      </p>
+    </div>
+  </div>
+</section>
+
+ {/*Section Notre méthodologie*/} 
+<section
+  id="notre-methodologie"
+  className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28"
+>
+  <div className="container mx-auto max-w-4xl">
+    <div
+      className="bg-white border-4 rounded-3xl shadow-lg flex flex-col justify-between p-6 sm:p-8 md:p-10 min-h-[300px] md:h-[300px] h-auto"
+      style={{ borderColor: '#f26f33' }} // bordure orange assurée
     >
-          <div className="bg-white border border-gray-200 rounded-3xl p-10 shadow-lg space-y-6">
-            <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
-              {" "}
-              {t("methodology.title")}
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              {t("methodology.intro")}
-              <ul className="mt-4 space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("methodology.principle_1_title")} :{" "}
-                    {t("methodology.principle_1_desc")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("methodology.principle_2_title")} :{" "}
-                    {t("methodology.principle_2_desc")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("methodology.principle_3_title")} :{" "}
-                    {t("methodology.principle_3_desc")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("methodology.principle_4_title")} :{" "}
-                    {t("methodology.principle_4_desc")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("methodology.principle_5_title")} :{" "}
-                    {t("methodology.principle_5_desc")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("methodology.principle_7_title")} :{" "}
-                    {t("methodology.principle_7_desc")}{" "}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("methodology.principle_6_title")} :{" "}
-                    {t("methodology.principle_6_desc")}
-                  </span>
-                </li>
-              </ul>
-              {t("methodology.conclusion")}
-            </p>
-          </div>
-        </div>
-      </section>
+      <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
+        <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2 rounded-full" />
+        {t("methodology.title")}
+      </h2>
 
-      <section
-        id="valeur-ajoutee"
-        className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28"
-      >
-        <div className="container mx-auto max-w-4xl">
-              <div
-      className="bg-white border-4 rounded-3xl shadow-lg"
-      style={{ borderColor: '#f26f33' }}
+      <p className="text-gray-600 leading-relaxed whitespace-pre-line">
+        {t("methodology.intro")}
+      </p>
+
+      <ul className="mt-4 space-y-3">
+        <li className="flex items-start gap-3">
+          <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("methodology.principle_1_title")} : {t("methodology.principle_1_desc")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("methodology.principle_2_title")} : {t("methodology.principle_2_desc")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("methodology.principle_3_title")} : {t("methodology.principle_3_desc")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("methodology.principle_4_title")} : {t("methodology.principle_4_desc")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("methodology.principle_5_title")} : {t("methodology.principle_5_desc")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("methodology.principle_7_title")} : {t("methodology.principle_7_desc")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-2 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("methodology.principle_6_title")} : {t("methodology.principle_6_desc")}
+          </span>
+        </li>
+      </ul>
+
+      <p className="text-gray-600 leading-relaxed mt-4">
+        {t("methodology.conclusion")}
+      </p>
+    </div>
+  </div>
+</section>
+
+ {/*Section Valeur ajoutée*/} 
+
+<section
+  id="valeur-ajoutee"
+  className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28"
+>
+  <div className="container mx-auto max-w-4xl">
+    <div
+      className="bg-white border-4 rounded-3xl shadow-lg flex flex-col justify-between p-6 sm:p-8 md:p-10 min-h-[300px] md:h-[300px] h-auto"
+      style={{ borderColor: '#f26f33' }} 
     >
-            <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
-              {t("value_impact.section_title")}
-            </h2>
 
-            {/* Valeur ajoutée */}
-            <div>
-              <h2 className="text-gray-900 text-2xl font-semibold mb-4">
-                {t("value_impact.added_value_title")}
-              </h2>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.added_value_1")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.added_value_2")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.added_value_3")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.added_value_4")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.added_value_5")}
-                  </span>
-                </li>
-              </ul>
-            </div>
+      <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
+        <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2 rounded-full" />
+        {t("value_impact.section_title")}
+      </h2>
 
-            {/* Impact social */}
-            <div>
-              <h2 className="text-gray-900 text-2xl font-semibold mb-4">
-                {t("value_impact.social_impact_title")}
-              </h2>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.social_impact_1")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.social_impact_2")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.social_impact_3")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.social_impact_4")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.social_impact_5")}
-                  </span>
-                </li>
-              </ul>
-            </div>
+      {/* Valeur ajoutée */}
+      <div>
+        <h2 className="text-gray-900 text-2xl font-semibold mb-4">
+          {t("value_impact.added_value_title")}
+        </h2>
+        <ul className="space-y-3">
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.added_value_1")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.added_value_2")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.added_value_3")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.added_value_4")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.added_value_5")}
+            </span>
+          </li>
+        </ul>
+      </div>
 
-            {/* Impact économique */}
-            <div>
-              <h2 className="text-gray-900 text-2xl font-semibold mb-4">
-                {t("value_impact.economic_impact_title")}
-              </h2>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.economic_impact_1")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.economic_impact_2")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.economic_impact_3")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.economic_impact_4")}
-                  </span>
-                </li>
-              </ul>
-            </div>
+      {/* Impact social */}
+      <div>
+        <h2 className="text-gray-900 text-2xl font-semibold mb-4">
+          {t("value_impact.social_impact_title")}
+        </h2>
+        <ul className="space-y-3">
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.social_impact_1")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.social_impact_2")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.social_impact_3")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.social_impact_4")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.social_impact_5")}
+            </span>
+          </li>
+        </ul>
+      </div>
 
-            {/* Impact environnemental */}
-            <div>
-              <h2 className="text-gray-900 text-2xl font-semibold mb-4">
-                {t("value_impact.environmental_impact_title")}
-              </h2>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.environmental_impact_1")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.environmental_impact_2")}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-600 leading-relaxed">
-                    {t("value_impact.environmental_impact_3")}
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Impact économique */}
+      <div>
+        <h2 className="text-gray-900 text-2xl font-semibold mb-4">
+          {t("value_impact.economic_impact_title")}
+        </h2>
+        <ul className="space-y-3">
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.economic_impact_1")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.economic_impact_2")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.economic_impact_3")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.economic_impact_4")}
+            </span>
+          </li>
+        </ul>
+      </div>
 
-      <section id="mission" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
-        <div className="container mx-auto max-w-4xl">
-              <div
-      className="bg-white border-4 rounded-3xl shadow-lg"
-      style={{ borderColor: '#f26f33' }}
+      {/* Impact environnemental */}
+      <div>
+        <h2 className="text-gray-900 text-2xl font-semibold mb-4">
+          {t("value_impact.environmental_impact_title")}
+        </h2>
+        <ul className="space-y-3">
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.environmental_impact_1")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.environmental_impact_2")}
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+            <span className="text-gray-600 leading-relaxed">
+              {t("value_impact.environmental_impact_3")}
+            </span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ {/*Section Notre mission */} 
+
+<section id="mission" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
+  <div className="container mx-auto max-w-4xl">
+    <div
+      className="bg-white border-4 rounded-3xl shadow-lg flex flex-col justify-between p-6 sm:p-8 md:p-10 min-h-[300px] md:h-[300px] h-auto"
+      style={{ borderColor: '#f26f33' }} // bordure orange garantie
     >
-            <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
-              {t("mission.section_title")}
-            </h2>
 
-            {/* Court terme */}
-            <div>
-              <h2 className="text-gray-900 text-2xl font-semibold mb-4">
-                {t("mission.short_term.title")}
-              </h2>
-              <ul className="space-y-3">
-                {Array.from({ length: 5 }, (_, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                    <span className="text-gray-600 leading-relaxed">
-                      {t(`mission.short_term.item_${i + 1}`)}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+      <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
+        <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2 rounded-full" />
+        {t("mission.section_title")}
+      </h2>
 
-            {/* Moyen terme */}
-            <div>
-              <h2 className="text-gray-900 text-2xl font-semibold mb-4">
-                {t("mission.medium_term.title")}
-              </h2>
-              <ul className="space-y-3">
-                {Array.from({ length: 5 }, (_, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                    <span className="text-gray-600 leading-relaxed">
-                      {t(`mission.medium_term.item_${i + 1}`)}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+      {/* Court terme */}
+      <div>
+        <h2 className="text-gray-900 text-2xl font-semibold mb-4">
+          {t("mission.short_term.title")}
+        </h2>
+        <ul className="space-y-3">
+          {Array.from({ length: 5 }, (_, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+              <span className="text-gray-600 leading-relaxed">
+                {t(`mission.short_term.item_${i + 1}`)}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-            {/* Long terme */}
-            <div>
-              <h2 className="text-gray-900 text-2xl font-semibold mb-4">
-                {t("mission.long_term.title")}
-              </h2>
-              <ul className="space-y-3">
-                {Array.from({ length: 5 }, (_, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                    <span className="text-gray-600 leading-relaxed">
-                      {t(`mission.long_term.item_${i + 1}`)}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Moyen terme */}
+      <div>
+        <h2 className="text-gray-900 text-2xl font-semibold mb-4">
+          {t("mission.medium_term.title")}
+        </h2>
+        <ul className="space-y-3">
+          {Array.from({ length: 5 }, (_, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+              <span className="text-gray-600 leading-relaxed">
+                {t(`mission.medium_term.item_${i + 1}`)}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-      <section id="vision" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
-        <div className="container mx-auto max-w-4xl">
-              <div
-      className="bg-white border-4 rounded-3xl shadow-lg"
-      style={{ borderColor: '#f26f33' }}
+      {/* Long terme */}
+      <div>
+        <h2 className="text-gray-900 text-2xl font-semibold mb-4">
+          {t("mission.long_term.title")}
+        </h2>
+        <ul className="space-y-3">
+          {Array.from({ length: 5 }, (_, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+              <span className="text-gray-600 leading-relaxed">
+                {t(`mission.long_term.item_${i + 1}`)}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ {/*Section Notre vision */} 
+<section id="vision" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
+  <div className="container mx-auto max-w-4xl">
+    <div
+      className="bg-white border-4 rounded-3xl shadow-lg flex flex-col justify-between p-6 sm:p-8 md:p-10 min-h-[300px] md:h-[300px] h-auto"
+      style={{ borderColor: '#f26f33' }} // bordure orange garantie
     >
-            {/* Gros titre */}
-            <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
-              {" "}
-              {t("vision.section_title")}
-            </h2>
 
-            {/* Court terme */}
-            <div>
-              <h3 className="text-gray-800 text-xl font-medium mb-2">
-                {t("vision.short_term.title")}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t("vision.short_term.text")}
-              </p>
-            </div>
+      {/* Gros titre */}
+      <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
+        <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2 rounded-full" />
+        {t("vision.section_title")}
+      </h2>
 
-            {/* Moyen terme */}
-            <div>
-              <h3 className="text-gray-800 text-xl font-medium mb-2">
-                {t("vision.medium_term.title")}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t("vision.medium_term.text")}
-              </p>
-            </div>
+      {/* Court terme */}
+      <div>
+        <h3 className="text-gray-800 text-xl font-medium mb-2">
+          {t("vision.short_term.title")}
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          {t("vision.short_term.text")}
+        </p>
+      </div>
 
-            {/* Long terme */}
-            <div>
-              <h3 className="text-gray-800 text-xl font-medium mb-2">
-                {t("vision.long_term.title")}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t("vision.long_term.text")}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Moyen terme */}
+      <div>
+        <h3 className="text-gray-800 text-xl font-medium mb-2">
+          {t("vision.medium_term.title")}
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          {t("vision.medium_term.text")}
+        </p>
+      </div>
+
+      {/* Long terme */}
+      <div>
+        <h3 className="text-gray-800 text-xl font-medium mb-2">
+          {t("vision.long_term.title")}
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          {t("vision.long_term.text")}
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* Events Section */}
-      <section id="events" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-            <div
-      className="bg-white border-4 rounded-3xl shadow-lg"
-      style={{ borderColor: '#f26f33' }}
-    >
-          <div className="text-center mb-12 space-y-4">
-            <h2 className="text-gray-900">{t("event.title")}</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              {t("event.description")}
-            </p>
-          </div>
+<section id="events" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  <div
+    className="bg-white border-4 rounded-3xl shadow-lg p-6 sm:p-8 md:p-10 h-auto"
+    style={{ borderColor: '#f26f33' }} 
+  >
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {events.map((event, index) => (
-              <EventCard key={index} {...event} />
-            ))}
-          </div>
-        </div>
-      </section>
+    <div className="text-center mb-12 space-y-4">
+      <h2 className="text-gray-900"><img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 rounded-full" />{t("event.title")}</h2>
+      <p className="text-gray-600 max-w-2xl mx-auto">
+        {t("event.description")}
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {events.map((event, index) => (
+        <EventCard key={index} {...event} />
+      ))}
+    </div>
+
+  </div>
+</section>
 
       {/* Community Section */}
-      <section id="community" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto">
-              <div
-      className="bg-white border-4 rounded-3xl shadow-lg"
-      style={{ borderColor: '#f26f33' }}
+<section id="community" className="py-20 px-4 sm:px-6 lg:px-8">
+  <div className="container mx-auto">
+    <div
+      className="bg-white border-4 rounded-3xl shadow-lg p-6 sm:p-8 md:p-10 h-auto"
+      style={{ borderColor: '#f26f33' }} 
     >
-            <div className="space-y-8">
-              <h2 className="text-gray-900">{t("community_title")}</h2>
-              <p className="text-gray-600">{t("community_desc")}</p>
+      <div className="space-y-8">
+        <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 rounded-full" />
+        <h2 className="text-gray-900">{t("community_title")}</h2>
+        <p className="text-gray-600">{t("community_desc")}</p>
 
-              <div className="grid sm:grid-cols-3 gap-8">
-                <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center">
-                    <Globe className="w-8 h-8 text-[#FF7A00]" />
-                  </div>
-                  <span className="text-gray-700">
-                    {t("multinational.title")}
-                  </span>
-                </div>
-
-                <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center">
-                    <MessageCircle className="w-8 h-8 text-[#FF7A00]" />
-                  </div>
-                  <span className="text-gray-700">
-                    {t("conversations.title")}
-                  </span>
-                </div>
-
-                <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center">
-                    <BookOpen className="w-8 h-8 text-[#FF7A00]" />
-                  </div>
-                  <span className="text-gray-700">
-                    {t("apprentissage.title")}
-                  </span>
-                </div>
-              </div>
+        <div className="grid sm:grid-cols-3 gap-8">
+          <div className="flex flex-col items-center text-center space-y-3">
+            <div className="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center">
+              <Globe className="w-8 h-8 text-[#FF7A00]" />
             </div>
+            <span className="text-gray-700">
+              {t("multinational.title")}
+            </span>
+          </div>
+
+          <div className="flex flex-col items-center text-center space-y-3">
+            <div className="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center">
+              <MessageCircle className="w-8 h-8 text-[#FF7A00]" />
+            </div>
+            <span className="text-gray-700">
+              {t("conversations.title")}
+            </span>
+          </div>
+
+          <div className="flex flex-col items-center text-center space-y-3">
+            <div className="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center">
+              <BookOpen className="w-8 h-8 text-[#FF7A00]" />
+            </div>
+            <span className="text-gray-700">
+              {t("apprentissage.title")}
+            </span>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* WhatsApp Section */}
-      <section
-        id="join"
-        className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-white"
+<section
+  id="join"
+  className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-white"
+>
+  <div className="container mx-auto max-w-4xl">
+    <div
+      className="bg-white border-4 rounded-3xl shadow-lg p-6 sm:p-8 md:p-10 h-auto"
+      style={{ borderColor: '#f26f33' }} 
+    >
+
+      <div className="space-y-4">
+        <h2 className="text-gray-900"><img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 rounded-full" />{t("joinCommunity.title")}</h2>
+        <p className="text-gray-600">{t("joinCommunity.description")}</p>
+      </div>
+
+      <div className="flex flex-col items-center gap-8 bg-white p-12 rounded-10xl shadow-lg">
+        <img
+          width="300"
+          height="300"
+          src={qrcode}
+          alt="LingoLille"
+          className="w-[300px] h-[300px] object-contain rounded-xl"
+        />
+
+        <Button
+          size="lg"
+          className="rounded-full bg-[#FF7A00] hover:bg-[#E66D00] text-white px-12"
+        >
+          {t("joinCommunity.linkText")}
+        </Button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{/* Section Services */}
+<section
+  id="services"
+  className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28"
+>
+  <div className="container mx-auto max-w-4xl">
+    <div
+      className="bg-white border-4 rounded-3xl shadow-lg p-6 sm:p-8 md:p-10 h-auto"
+      style={{ borderColor: '#f26f33' }} 
+    >
+
+      <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
+        <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2 rounded-full" />
+        {t("service.title")}
+      </h2>
+
+      <ul className="space-y-3 mt-4">
+        <li className="flex items-start gap-3">
+          <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("service.items.eventWeekly")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("service.items.boardingPass")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("service.items.informalHelp")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("service.items.workshops")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("service.items.cohesion")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("service.items.training")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("service.items.privateEvents")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("service.items.mediation")}
+          </span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
+          <span className="text-gray-600 leading-relaxed">
+            {t("service.items.platform")}
+          </span>
+        </li>
+      </ul>
+
+      <p className="text-gray-600 leading-relaxed mt-4">
+        {t("service.footer")}
+      </p>
+
+    </div>
+  </div>
+</section>
+
+{/* Section Contact */}
+<section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
+  <div
+    className="bg-white border-4 rounded-3xl shadow-lg p-6 sm:p-8 md:p-10 h-auto"
+    style={{ borderColor: '#f26f33' }}
+  >
+    <h2 className="text-gray-900 text-2xl font-semibold mb-6">
+      <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 rounded-full" />
+      {t("contact.title")}
+    </h2>
+
+    <form className="space-y-4" onSubmit={sendEmail}>
+      <input
+        type="text"
+        name="name"
+        placeholder={t("contact.name_placeholder")}
+        className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#FF7A00]"
+        required
+      />
+
+      <input
+        type="email"
+        name="email"
+        placeholder={t("contact.email_placeholder")}
+        className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#FF7A00]"
+        required
+      />
+
+      <textarea
+        name="message"
+        placeholder={t("contact.message_placeholder")}
+        className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#FF7A00]"
+        rows={5}
+        required
+      />
+
+      <button
+        type="submit"
+        className="bg-[#FF7A00] text-white px-6 py-3 rounded-full hover:bg-[#E66D00] transition-colors duration-300"
       >
-        <div className="container mx-auto max-w-4xl">
-              <div
-      className="bg-white border-4 rounded-3xl shadow-lg"
-      style={{ borderColor: '#f26f33' }}
-    >
-            <div className="space-y-4">
-              <h2 className="text-gray-900">{t("joinCommunity.title")}</h2>
-              <p className="text-gray-600">{t("joinCommunity.description")}</p>
-            </div>
-
-            <div className="flex flex-col items-center gap-8 bg-white p-12 rounded-10xl shadow-lg">
-              <img
-                width="300"
-                height="300"
-                src={qrcode}
-                alt="LingoLille"
-                className="w-[300px] h-[300px] object-contain rounded-xl"
-              />
-
-              <Button
-                size="lg"
-                className="rounded-full bg-[#FF7A00] hover:bg-[#E66D00] text-white px-12"
-              >
-                {t("joinCommunity.linkText")}
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="services"
-        className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28"
-      >
-        <div className="container mx-auto max-w-4xl">
-              <div
-      className="bg-white border-4 rounded-3xl shadow-lg"
-      style={{ borderColor: '#f26f33' }}
-    >
-            <h2 className="text-gray-900 text-2xl font-semibold flex items-center gap-2">
-              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 ml-2" />
-              {" "}
-              {t("service.title")}
-            </h2>
-
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                <span className="text-gray-600 leading-relaxed">
-                  {t("service.items.eventWeekly")}
-                </span>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                <span className="text-gray-600 leading-relaxed">
-                  {t("service.items.boardingPass")}
-                </span>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                <span className="text-gray-600 leading-relaxed">
-                  {t("service.items.informalHelp")}
-                </span>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                <span className="text-gray-600 leading-relaxed">
-                  {t("service.items.workshops")}
-                </span>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                <span className="text-gray-600 leading-relaxed">
-                  {t("service.items.cohesion")}
-                </span>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                <span className="text-gray-600 leading-relaxed">
-                  {t("service.items.training")}
-                </span>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                <span className="text-gray-600 leading-relaxed">
-                  {t("service.items.privateEvents")}
-                </span>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                <span className="text-gray-600 leading-relaxed">
-                  {t("service.items.mediation")}
-                </span>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-3 h-3 bg-[#FF7A00] rounded-full flex-shrink-0"></span>
-                <span className="text-gray-600 leading-relaxed">
-                  {t("service.items.platform")}
-                </span>
-              </li>
-            </ul>
-
-            <br />
-
-            <p className="text-gray-600 leading-relaxed mt-4">
-              {t("service.footer")}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-28">
-            <div
-      className="bg-white border-4 rounded-3xl shadow-lg"
-      style={{ borderColor: '#f26f33' }}
-    >
-          <h2 className="text-gray-900 text-2xl font-semibold mb-6">
-            {t("contact.title")}
-          </h2>
-
-          <form className="space-y-4" onSubmit={sendEmail}>
-            <input
-              type="text"
-              name="name"
-              placeholder={t("contact.name_placeholder")}
-              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#FF7A00]"
-              required
-            />
-
-            <input
-              type="email"
-              name="email"
-              placeholder={t("contact.email_placeholder")}
-              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#FF7A00]"
-              required
-            />
-
-            <textarea
-              name="message"
-              placeholder={t("contact.message_placeholder")}
-              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#FF7A00]"
-              rows={5}
-              required
-            />
-
-            <button
-              type="submit"
-              className="bg-[#FF7A00] text-white px-6 py-3 rounded-full hover:bg-[#E66D00] transition-colors duration-300"
-            >
-              {t("contact.send_button")}
-            </button>
-          </form>
-        </div>
-      </section>
+        {t("contact.send_button")}
+      </button>
+    </form>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex items-center gap-3">
-              <Logo size="sm" />
+              <img src={LingoLilleLogo} alt="Lingo Lille" className="w-8 h-8 rounded-full" />
               <span>Lingo Lille</span>
             </div>
 
@@ -1092,7 +1098,7 @@ export default function App() {
             </div>
 
             <p className="text-gray-400 text-sm">
-              © Lingo Lille - designed by Yanis DACI – 2025
+              © 2025 Lingo Lille. All rights reserved. Website design by Yanis DACI. Unauthorized use or reproduction is prohibited.
             </p>
           </div>
         </div>
